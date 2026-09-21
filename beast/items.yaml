@@ -1,0 +1,1948 @@
+# Beastmaster items: everything under XBMItemType, across all three categories the
+# game itself defines:
+#
+#   Beast Gear      worn accessories that modify the beastmaster or familiar
+#   Crucible Item   consumables usable only inside the Crucible of the Unbroken
+#   Feed            given to a familiar to raise its stats
+#
+# Extracted from XBMItem via xivapi/ffxiv-datamining. Icons in item-images/ are
+# ui/icon/243000/2431NN_hr1.tex.
+#
+#   id: kebab/snake-case identifier, matching the file name in item-images/
+#   name: display name
+#   number: the item's row in XBMItem, stable but not a number shown in any in-game UI
+#   category: Beast Gear, Crucible Item, or Feed
+#   sellPrice: territory tokens received selling to the in-run shop; 0 for Feed,
+#     which cannot be sold
+#   description: the item's full in-game tooltip
+
+- id: belt_of_constitution
+  name: Belt of Constitution
+  number: 1
+  category: Beast Gear
+  sellPrice: 98
+  description: |
+    Maximum HP +20%
+- id: ring_of_sacrifice
+  name: Ring of Sacrifice
+  number: 2
+  category: Beast Gear
+  sellPrice: 35
+  description: |
+    Revives beastmaster upon KO by sacrificing the summoned familiar.
+    Ineffective if a familiar is not summoned.
+- id: ring_of_curing
+  name: Ring of Curing
+  number: 3
+  category: Beast Gear
+  sellPrice: 175
+  description: |
+    Recovers 25% of maximum HP at the end of battles.
+- id: chemists_satchel
+  name: Chemist's Satchel
+  number: 4
+  category: Beast Gear
+  sellPrice: 35
+  description: |
+    Procures one random beast potion upon resting at campsites.
+- id: hexed_hat
+  name: Hexed Hat
+  number: 5
+  category: Beast Gear
+  sellPrice: 56
+  description: |
+    Magic Vulnerability -10%
+- id: steel_armor
+  name: Steel Armor
+  number: 6
+  category: Beast Gear
+  sellPrice: 63
+  description: |
+    Physical Vulnerability -15%
+- id: crown_of_the_wild
+  name: Crown of the Wild
+  number: 7
+  category: Beast Gear
+  sellPrice: 190
+  description: |
+    Physical Damage Dealt +10%
+    Critical Hit Rate +3%
+    ※Effects also apply to summoned familiar.
+- id: staff_of_the_wise
+  name: Staff of the Wise
+  number: 8
+  category: Beast Gear
+  sellPrice: 190
+  description: |
+    Magic Damage Dealt +20%
+    ※Effects also apply to summoned familiar.
+- id: power_armlet
+  name: Power Armlet
+  number: 9
+  category: Beast Gear
+  sellPrice: 174
+  description: |
+    Physical Damage Dealt +12%
+    Evasion +3%
+- id: twisted_headband
+  name: Twisted Headband
+  number: 10
+  category: Beast Gear
+  sellPrice: 84
+  description: |
+    Physical Damage Dealt +5%
+    Physical Vulnerability -5%
+- id: green_beret
+  name: Green Beret
+  number: 11
+  category: Beast Gear
+  sellPrice: 174
+  description: |
+    Critical Hit Power +35
+    Damage Dealt +3%
+    Maximum HP +7%
+- id: mystic_boots
+  name: Mystic Boots
+  number: 12
+  category: Beast Gear
+  sellPrice: 91
+  description: |
+    Evasion +8%
+    Movement Speed +50%
+    Increases HP recovery via actions and crucible items by 15%.
+- id: ring_of_protection
+  name: Ring of Protection
+  number: 13
+  category: Beast Gear
+  sellPrice: 104
+  description: |
+    Damage Taken -10%
+    Maximum HP +7%
+- id: ice_shield
+  name: Ice Shield
+  number: 14
+  category: Beast Gear
+  sellPrice: 140
+  description: |
+    Damage Taken -30%
+    **Slow** +10%
+    30% chance to absorb ice damage as HP.
+- id: earth_shield
+  name: Earth Shield
+  number: 15
+  category: Beast Gear
+  sellPrice: 266
+  description: |
+    30% chance to absorb earth damage as HP.
+    10% chance to grant **Stoneskin** upon blocking with shield.
+    **Stoneskin Effect:** Absorbs damage totaling 15% of maximum HP
+    **Duration:** 60s
+- id: water_shield
+  name: Water Shield
+  number: 16
+  category: Beast Gear
+  sellPrice: 214
+  description: |
+    Block Strength +50%
+    30% chance to absorb water damage as HP.
+    10% chance to grant **Reflect** upon blocking with shield.
+    **Reflect Effect:** Reflects most magic attacks back at the caster
+    **Duration:** 60s
+- id: force_shield
+  name: Force Shield
+  number: 17
+  category: Beast Gear
+  sellPrice: 82
+  description: |
+    Block Strength +75%
+    Magic Vulnerability -10%
+- id: crimson_ribbon
+  name: Crimson Ribbon
+  number: 18
+  category: Beast Gear
+  sellPrice: 84
+  description: |
+    Petrification Resistance +100%
+    Blind Resistance +100%
+    Paralysis Resistance +100%
+- id: genji_gloves
+  name: Genji Gloves
+  number: 19
+  category: Beast Gear
+  sellPrice: 238
+  description: |
+    Damage Dealt +12%
+    Paralysis Resistance +100%
+    10% chance to recover TP upon completing a combo with a beastmaster instinctual skill.
+- id: genji_greatshield
+  name: Genji Greatshield
+  number: 20
+  category: Beast Gear
+  sellPrice: 94
+  description: |
+    Block Strength +30%
+    Evasion +10%
+- id: genji_armor
+  name: Genji Armor
+  number: 21
+  category: Beast Gear
+  sellPrice: 226
+  description: |
+    Movement Speed -20%
+    Damage Taken -20%
+    Maximum HP +30%
+- id: silver_specs
+  name: Silver Specs
+  number: 22
+  category: Beast Gear
+  sellPrice: 112
+  description: |
+    Critical Hit Rate +15%
+    Blind Resistance +100%
+- id: angel_robe
+  name: Angel Robe
+  number: 23
+  category: Beast Gear
+  sellPrice: 189
+  description: |
+    Damage Taken -7%
+    Poison Resistance +100%
+    5% chance to grant one stack of **Rehabilitation** upon suffering damage.
+    **Rehabilitation Effect:** Restores 3% of maximum HP at regular intervals
+    **Duration:** 12s
+    **Maximum Stacks:** 8
+- id: master_shield
+  name: Master Shield
+  number: 24
+  category: Beast Gear
+  sellPrice: 390
+  description: |
+    Block Strength +125%
+    Damage Taken -25%
+    Maximum HP +35%
+- id: mystic_veil
+  name: Mystic Veil
+  number: 25
+  category: Beast Gear
+  sellPrice: 220
+  description: |
+    Magic Damage Dealt +18%
+    Magic Vulnerability -15%
+    Increases HP recovery via actions and crucible items by 15%.
+- id: black_cowl
+  name: Black Cowl
+  number: 26
+  category: Beast Gear
+  sellPrice: 122
+  description: |
+    Maximum HP +6%
+    Evasion +8%
+    Sleep Resistance +100%
+- id: heros_crown
+  name: Hero's Crown
+  number: 27
+  category: Beast Gear
+  sellPrice: 420
+  description: |
+    Maximum HP +30%
+    Damage Dealt +18%
+    Grants **Excellence** upon completing a combo with a beastmaster instinctual skill.
+    **Excellence Effect:** Nullifies most attacks and increases damage dealt by 10%
+    **Duration:** 9s
+- id: mirage_vest
+  name: Mirage Vest
+  number: 28
+  category: Beast Gear
+  sellPrice: 150
+  description: |
+    20% chance to grant one stack of **Blink** upon suffering damage.
+    **Blink Effect:** Nullifies most physical attacks, reducing one stack per nullification
+    **Duration:** 120s
+- id: soulreapers_armor
+  name: Soulreaper's Armor
+  number: 29
+  category: Beast Gear
+  sellPrice: 99
+  description: |
+    Maximum HP +10%
+    Damage Taken -5%
+    Doom Resistance +100%
+- id: briar_armor
+  name: Briar Armor
+  number: 30
+  category: Beast Gear
+  sellPrice: 168
+  description: |
+    Deals unaspected damage with a potency of 360 each time you suffer physical damage.
+    Counter damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+- id: cowards_knife
+  name: Coward's Knife
+  number: 31
+  category: Beast Gear
+  sellPrice: 90
+  description: |
+    Damage Dealt +1%
+    35% chance to offer escape from an enemy space, thus avoiding battle and forfeiting loot. Ineffective on elite enemy or boss spaces.
+    Grants one stack of **Guerrilla Tactics** upon fleeing.
+    **Guerrilla Tactics Effect:** Increases damage dealt by 18% and evasion by 4%
+- id: umbral_mantle
+  name: Umbral Mantle
+  number: 32
+  category: Beast Gear
+  sellPrice: 167
+  description: |
+    Maximum HP +12%
+    25% chance to recover TP upon completing a combo with a beastmaster instinctual skill.
+- id: umbral_band
+  name: Umbral Band
+  number: 33
+  category: Beast Gear
+  sellPrice: 81
+  description: |
+    Physical Vulnerability -9%
+    10% chance to recover TP upon completing a combo with a beastmaster instinctual skill.
+- id: umbral_wristlet
+  name: Umbral Wristlet
+  number: 34
+  category: Beast Gear
+  sellPrice: 112
+  description: |
+    Magic Vulnerability -15%
+    Maximum HP +5%
+    Stun Resistance +100%
+- id: astral_mantle
+  name: Astral Mantle
+  number: 35
+  category: Beast Gear
+  sellPrice: 190
+  description: |
+    **Rapid Recast** +25%
+    Damage Taken -7%
+    Maximum HP +15%
+- id: astral_band
+  name: Astral Band
+  number: 36
+  category: Beast Gear
+  sellPrice: 74
+  description: |
+    **Rapid Recast** +15%
+    Physical Vulnerability -8%
+- id: astral_wristlet
+  name: Astral Wristlet
+  number: 37
+  category: Beast Gear
+  sellPrice: 86
+  description: |
+    **Rapid Recast** +15%
+    Magic Vulnerability -8%
+- id: flame-wreathed_axe
+  name: Flame-wreathed Axe
+  number: 38
+  category: Beast Gear
+  sellPrice: 168
+  description: |
+    Deals additional fire damage with a potency of 240 after each auto-attack.
+    Additional damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    When carrying multiple pieces of beast gear that influence auto-attacks, only one will take effect.
+- id: icebitten_axe
+  name: Icebitten Axe
+  number: 39
+  category: Beast Gear
+  sellPrice: 168
+  description: |
+    Deals additional ice damage with a potency of 240 after each auto-attack.
+    Additional damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    When carrying multiple pieces of beast gear that influence auto-attacks, only one will take effect.
+- id: thunderstruck_axe
+  name: Thunderstruck Axe
+  number: 40
+  category: Beast Gear
+  sellPrice: 168
+  description: |
+    Deals additional lightning damage with a potency of 240 after each auto-attack.
+    Additional damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    When carrying multiple pieces of beast gear that influence auto-attacks, only one will take effect.
+- id: earthcrushed_axe
+  name: Earthcrushed Axe
+  number: 41
+  category: Beast Gear
+  sellPrice: 168
+  description: |
+    Deals additional earth damage with a potency of 240 after each auto-attack.
+    Additional damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    When carrying multiple pieces of beast gear that influence auto-attacks, only one will take effect.
+- id: deepdrowned_axe
+  name: Deepdrowned Axe
+  number: 42
+  category: Beast Gear
+  sellPrice: 168
+  description: |
+    Deals additional water damage with a potency of 240 after each auto-attack.
+    Additional damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    When carrying multiple pieces of beast gear that influence auto-attacks, only one will take effect.
+- id: windblown_axe
+  name: Windblown Axe
+  number: 43
+  category: Beast Gear
+  sellPrice: 168
+  description: |
+    Deals additional wind damage with a potency of 240 after each auto-attack.
+    Additional damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    When carrying multiple pieces of beast gear that influence auto-attacks, only one will take effect.
+- id: ninja_suit
+  name: Ninja Suit
+  number: 44
+  category: Beast Gear
+  sellPrice: 175
+  description: |
+    Maximum HP +17%
+    Evasion +8%
+    Grants one stack of **Haste** for each attack evaded.
+    **Haste Effect:** Reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay by 2%
+    **Duration:** 60s
+    **Maximum Stacks:** 5
+- id: ninja_gloves
+  name: Ninja Gloves
+  number: 45
+  category: Beast Gear
+  sellPrice: 63
+  description: |
+    **Haste** +2%
+    Physical Damage Dealt +3%
+- id: ninja_eyepatch
+  name: Ninja Eyepatch
+  number: 46
+  category: Beast Gear
+  sellPrice: 91
+  description: |
+    **Haste** +5%
+    Critical Hit Rate +5%
+- id: wind_shield
+  name: Wind Shield
+  number: 47
+  category: Beast Gear
+  sellPrice: 224
+  description: |
+    30% chance to absorb wind damage as HP.
+    50% chance to grant **Blink** upon blocking with shield.
+    **Blink Effect:** Nullifies most physical attacks, reducing one stack per nullification
+    **Duration:** 120s
+- id: wind_mask
+  name: Wind Mask
+  number: 48
+  category: Beast Gear
+  sellPrice: 154
+  description: |
+    Magic Vulnerability -10%
+    Increases HP recovery via actions and crucible items by 15%.
+    Grants **Keen Edge** upon evading an attack.
+    **Keen Edge Effect:** Inflicts damage over time on self in exchange for increasing damage dealt by 30%
+    **Duration:** 21s
+- id: wind_armor
+  name: Wind Armor
+  number: 49
+  category: Beast Gear
+  sellPrice: 264
+  description: |
+    Damage Taken -15%
+    Magic Damage Dealt +20%
+    Increases HP recovery via actions and crucible items by 30%.
+- id: heavy_axe
+  name: Heavy Axe
+  number: 50
+  category: Beast Gear
+  sellPrice: 268
+  description: |
+    Damage Dealt +25%
+    Movement Speed -20%
+- id: mythril_armor
+  name: Mythril Armor
+  number: 51
+  category: Beast Gear
+  sellPrice: 172
+  description: |
+    Damage Taken -15%
+    Maximum HP +15%
+- id: mythril_gloves
+  name: Mythril Gloves
+  number: 52
+  category: Beast Gear
+  sellPrice: 113
+  description: |
+    Damage Taken -5%
+    Physical Damage Dealt +5%
+    Maximum HP +5%
+- id: mythril_greaves
+  name: Mythril Greaves
+  number: 53
+  category: Beast Gear
+  sellPrice: 85
+  description: |
+    Damage Taken -10%
+    Maximum HP +5%
+- id: beast_mask
+  name: Beast Mask
+  number: 54
+  category: Beast Gear
+  sellPrice: 126
+  description: |
+    Physical Vulnerability -10%
+    Critical Hit Rate +15%
+- id: beastly_knife
+  name: Beastly Knife
+  number: 55
+  category: Beast Gear
+  sellPrice: 87
+  description: |
+    Critical Hit Rate +8%
+    25% chance to grant one stack of **Damage Up** upon landing a critical hit.
+    **Damage Up Effect:** Increases damage dealt by 3%
+    **Duration:** 30s
+    **Maximum Stacks:** 8
+- id: beast_earring
+  name: Beast Earring
+  number: 56
+  category: Beast Gear
+  sellPrice: 84
+  description: |
+    Critical Hit Rate +15%
+    Maximum HP +2%
+- id: thiefs_knife
+  name: Thief's Knife
+  number: 57
+  category: Beast Gear
+  sellPrice: 200
+  description: |
+    **Haste** +1%
+    Grants two items on treasure spaces.
+- id: thiefs_garb
+  name: Thief's Garb
+  number: 58
+  category: Beast Gear
+  sellPrice: 172
+  description: |
+    Loot Drop Rate +80%
+    Damage Taken -8%
+    Maximum HP +18%
+- id: thiefs_gloves
+  name: Thief's Gloves
+  number: 59
+  category: Beast Gear
+  sellPrice: 50
+  description: |
+    Loot Drop Rate +70%
+    **Haste** +2%
+- id: thiefs_boots
+  name: Thief's Boots
+  number: 60
+  category: Beast Gear
+  sellPrice: 30
+  description: |
+    Loot Drop Rate +40%
+    Evasion +2%
+- id: thunder_axe
+  name: Thunder Axe
+  number: 61
+  category: Beast Gear
+  sellPrice: 315
+  description: |
+    Damage Dealt +30%
+    5% chance to inflict **Stun** on self upon suffering damage.
+    **Duration:** 3s
+- id: thunder_armor
+  name: Thunder Armor
+  number: 62
+  category: Beast Gear
+  sellPrice: 161
+  description: |
+    30% chance to absorb lightning damage as HP.
+    5% chance of granting one stack of **High Wire** upon landing a critical hit.
+    **High Wire Effect:** Increases damage dealt by 10% and reduces damage taken by 5%
+    **Duration:** 180s
+    **Maximum Stacks:** 4
+- id: warded_shield
+  name: Warded Shield
+  number: 63
+  category: Beast Gear
+  sellPrice: 84
+  description: |
+    Grants one stack of **Magic Vulnerability Down** upon blocking with shield.
+    **Magic Vulnerability Down Effect:** Reduces magic damage taken by 5%
+    **Duration:** 60s
+    **Maximum Stacks:** 8
+- id: gold_hairpin
+  name: Gold Hairpin
+  number: 64
+  category: Beast Gear
+  sellPrice: 113
+  description: |
+    **Rapid Recast** +10%
+    25% chance to recover TP upon completing a combo with a beastmaster instinctual skill.
+- id: flame_knife
+  name: Flame Knife
+  number: 65
+  category: Beast Gear
+  sellPrice: 262
+  description: |
+    Damage Dealt +25%
+    **Haste** +5%
+    10% chance to inflict **Chains of Condemnation** on self upon landing a critical hit.
+    **Chains of Condemnation Effect:** Suffers magic damage upon moving
+    **Duration:** 9s
+- id: flame_shield
+  name: Flame Shield
+  number: 66
+  category: Beast Gear
+  sellPrice: 116
+  description: |
+    Block Strength +50%
+    Damage Dealt +3%
+    30% chance to absorb fire damage as HP.
+- id: merchants_cap
+  name: Merchant's Cap
+  number: 67
+  category: Beast Gear
+  sellPrice: 24
+  description: |
+    Territory Tokens Earned +25%
+    Critical Hit Rate -10%
+    Damage Dealt +5%
+- id: merchants_garb
+  name: Merchant's Garb
+  number: 68
+  category: Beast Gear
+  sellPrice: 52
+  description: |
+    Territory Tokens Earned +25%
+    Physical Vulnerability -10%
+- id: merchants_shoes
+  name: Merchant's Shoes
+  number: 69
+  category: Beast Gear
+  sellPrice: 101
+  description: |
+    Territory Tokens Earned +25%
+    Evasion +4%
+    Maximum HP +12%
+- id: spirited_ring
+  name: Spirited Ring
+  number: 70
+  category: Beast Gear
+  sellPrice: 113
+  description: |
+    Maximum HP +3%
+    TP Accumulation +25%
+- id: demonic_helm
+  name: Demonic Helm
+  number: 71
+  category: Beast Gear
+  sellPrice: 264
+  description: |
+    Damage Dealt +20%
+    TP Accumulation +20%
+    1% chance to inflict **Doom** on self upon suffering damage.
+    **Duration:** 2s
+- id: demonic_armor
+  name: Demonic Armor
+  number: 72
+  category: Beast Gear
+  sellPrice: 170
+  description: |
+    Maximum HP +5%
+    TP Accumulation +5%
+    Grants one stack of **High Wire** upon defeating an enemy.
+    **High Wire Effect:** Increases damage dealt by 10% and reduces damage taken by 5%
+    **Duration:** 180s
+    **Maximum Stacks:** 4
+- id: empress_hairpin
+  name: Empress Hairpin
+  number: 73
+  category: Beast Gear
+  sellPrice: 129
+  description: |
+    Evasion +10%
+    Maximum HP -8%
+    2% chance to grant one stack of **Rehabilitation** upon landing a critical hit.
+    **Rehabilitation Effect:** Restores 3% of maximum HP at regular intervals
+    **Duration:** 12s
+    **Maximum Stacks:** 8
+- id: haste_belt
+  name: Haste Belt
+  number: 74
+  category: Beast Gear
+  sellPrice: 76
+  description: |
+    **Haste** +6%
+- id: warriors_buckler
+  name: Warrior's Buckler
+  number: 75
+  category: Beast Gear
+  sellPrice: 64
+  description: |
+    Block Strength +100%
+    Physical Vulnerability -5%
+    Maximum HP +2%
+- id: g1_beast_potion
+  name: G1 Beast Potion
+  number: 76
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Restores 10% of HP to self or familiar.
+- id: g2_beast_potion
+  name: G2 Beast Potion
+  number: 77
+  category: Crucible Item
+  sellPrice: 72
+  description: |
+    Restores 23% of HP to self or familiar.
+- id: g3_beast_potion
+  name: G3 Beast Potion
+  number: 78
+  category: Crucible Item
+  sellPrice: 113
+  description: |
+    Restores 36% of HP to self or familiar.
+- id: g4_beast_potion
+  name: G4 Beast Potion
+  number: 79
+  category: Crucible Item
+  sellPrice: 158
+  description: |
+    Restores 50% of HP to self or familiar.
+- id: g1_crucible_ash
+  name: G1 Crucible Ash
+  number: 80
+  category: Crucible Item
+  sellPrice: 63
+  description: |
+    Restores 10% of HP to self and nearby allies.
+- id: g2_crucible_ash
+  name: G2 Crucible Ash
+  number: 81
+  category: Crucible Item
+  sellPrice: 158
+  description: |
+    Restores 25% of HP to self and nearby allies.
+- id: g3_crucible_ash
+  name: G3 Crucible Ash
+  number: 82
+  category: Crucible Item
+  sellPrice: 252
+  description: |
+    Restores 40% of HP to self and nearby allies.
+- id: crucible_antidote
+  name: Crucible Antidote
+  number: 83
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Instantly cures most instances of poison for self or familiar, restoring 25% of maximum HP upon success.
+    ※Can only be used on Crucible battlegrounds.
+- id: crucible_needle
+  name: Crucible Needle
+  number: 84
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Instantly cures most instances of petrification for familiar, restoring 50% of maximum HP upon success. Additionally grants **Stoneskin**.
+    **Stoneskin Effect:** Absorbs damage totaling 50% of maximum HP
+    **Duration:** 60s
+    ※Can only be used on Crucible battlegrounds.
+- id: crucible_eye_drops
+  name: Crucible Eye Drops
+  number: 85
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Instantly cures most instances of blindness for self or familiar, restoring 25% of maximum HP upon success.
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_antipoison_soul_serum
+  name: G1 Antipoison Soul Serum
+  number: 86
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Increases poison resistance by 100% for self or familiar.
+    **Duration:** 180s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_antipoison_soul_serum
+  name: G2 Antipoison Soul Serum
+  number: 87
+  category: Crucible Item
+  sellPrice: 50
+  description: |
+    Increases poison resistance by 100% for self and nearby allies.
+    **Duration:** 300s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_antiparalysis_soul_serum
+  name: G1 Antiparalysis Soul Serum
+  number: 88
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Increases paralysis resistance by 100% for self or familiar.
+    **Duration:** 180s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_antiparalysis_soul_serum
+  name: G2 Antiparalysis Soul Serum
+  number: 89
+  category: Crucible Item
+  sellPrice: 50
+  description: |
+    Increases paralysis resistance by 100% for self and nearby allies.
+    **Duration:** 300s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_antiblind_soul_serum
+  name: G1 Antiblind Soul Serum
+  number: 90
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Increases blind resistance by 100% for self or familiar.
+    **Duration:** 180s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_antiblind_soul_serum
+  name: G2 Antiblind Soul Serum
+  number: 91
+  category: Crucible Item
+  sellPrice: 50
+  description: |
+    Increases blind resistance by 100% for self and nearby allies.
+    **Duration:** 300s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_antipetrification_soul_serum
+  name: G1 Antipetrification Soul Serum
+  number: 92
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Increases petrification resistance by 100% for self or familiar.
+    **Duration:** 180s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_antipetrification_soul_serum
+  name: G2 Antipetrification Soul Serum
+  number: 93
+  category: Crucible Item
+  sellPrice: 50
+  description: |
+    Increases petrification resistance by 100% for self and nearby allies.
+    **Duration:** 300s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_antisleep_soul_serum
+  name: G1 Antisleep Soul Serum
+  number: 94
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Increases sleep resistance by 100% for self or familiar.
+    **Duration:** 180s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_antisleep_soul_serum
+  name: G2 Antisleep Soul Serum
+  number: 95
+  category: Crucible Item
+  sellPrice: 50
+  description: |
+    Increases sleep resistance by 100% for self and nearby allies.
+    **Duration:** 300s
+    **Additional Effect:** When carrying a crimson ribbon, restores 50% of target's total HP
+    ※Can only be used on Crucible battlegrounds.
+- id: blessed_horn
+  name: Blessed Horn
+  number: 96
+  category: Crucible Item
+  sellPrice: 135
+  description: |
+    Revives an incapacitated familiar.
+    ※Can only be used while traversing a Crucible board.
+- id: beastly_smokebomb
+  name: Beastly Smokebomb
+  number: 97
+  category: Crucible Item
+  sellPrice: 85
+  description: |
+    Creates a distraction, allowing escape from battle. Ineffective against elite enemies and bosses.
+    Use by selecting “Flee” upon an enemy space.
+- id: g1_beastmaster_reraiser
+  name: G1 Beastmaster Reraiser
+  number: 98
+  category: Crucible Item
+  sellPrice: 221
+  description: |
+    Grants **Reraise** to self.
+    **Reraise Effect:** 70% chance of automatic revival upon KO
+- id: g2_beastmaster_reraiser
+  name: G2 Beastmaster Reraiser
+  number: 99
+  category: Crucible Item
+  sellPrice: 299
+  description: |
+    Grants **Reraise** to self.
+    **Reraise Effect:** 95% chance of automatic revival upon KO
+- id: thiefs_eye
+  name: Thief's Eye
+  number: 100
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Triples the loot drop rate for the next enemy space cleared.
+    **Duration:** 30m
+    ※Can only be used on Crucible battlegrounds.
+- id: merchants_eye
+  name: Merchant's Eye
+  number: 101
+  category: Crucible Item
+  sellPrice: 23
+  description: |
+    Doubles the territory tokens earned for the next enemy space cleared.
+    **Duration:** 30m
+    ※Can only be used on Crucible battlegrounds.
+- id: crucible_tannin
+  name: Crucible Tannin
+  number: 102
+  category: Crucible Item
+  sellPrice: 47
+  description: |
+    Grants **Tough Skin** to self or familiar.
+    **Tough Skin Effect:** Reduces damage taken by 20%
+    **Duration:** 60s
+    **Additional Effect:** When carrying an ice shield, duration increases to 90s
+    ※Can only be used on Crucible battlegrounds.
+- id: crucible_stimulant
+  name: Crucible Stimulant
+  number: 103
+  category: Crucible Item
+  sellPrice: 43
+  description: |
+    Grants **Hasty Spirit** to self or familiar.
+    **Hasty Spirit Effect:** Reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay by 15%
+    **Duration:** 60s
+    **Additional Effect:** When carrying thief's gloves, duration increases to 90s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_tempered_strength
+  name: Potion of Tempered Strength
+  number: 104
+  category: Crucible Item
+  sellPrice: 36
+  description: |
+    Grants **Liquid Strength** to self or familiar.
+    **Liquid Strength Effect:** Increases physical damage dealt by 30%
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_feral_strength
+  name: Potion of Feral Strength
+  number: 105
+  category: Crucible Item
+  sellPrice: 88
+  description: |
+    Inflicts **Stun** while also granting **Liquid Strength** to self or familiar.
+    **Stun Duration:** 15s
+    **Liquid Strength Effect:** Increases physical damage dealt by 45%
+    **Duration:** 30s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_tempered_magic
+  name: Potion of Tempered Magic
+  number: 106
+  category: Crucible Item
+  sellPrice: 23
+  description: |
+    Grants **Liquid Magic** to self or familiar.
+    **Liquid Magic Effect:** Increases magic damage dealt by 30%
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_feral_magic
+  name: Potion of Feral Magic
+  number: 107
+  category: Crucible Item
+  sellPrice: 50
+  description: |
+    Inflicts **Nightmare** while also granting **Liquid Magic** to self or familiar.
+    **Nightmare Duration:** 30s
+    **Liquid Magic Effect:** Increases magic damage dealt by 50%
+    **Duration:** 30s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_tempered_intensity
+  name: Potion of Tempered Intensity
+  number: 108
+  category: Crucible Item
+  sellPrice: 20
+  description: |
+    Grants **Liquid Intensity** to self or familiar.
+    **Liquid Intensity Effect:** Increases critical hit rate by 30%
+    **Duration:** 30s
+    **Additional Effect:** When carrying silver specs, duration increases to 60s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_feral_intensity
+  name: Potion of Feral Intensity
+  number: 109
+  category: Crucible Item
+  sellPrice: 36
+  description: |
+    Inflicts **Petrification** while also granting **Liquid Intensity** to self or familiar.
+    **Petrification Duration:** 15s
+    **Liquid Intensity Effect:** Increases critical hit rate by 50%
+    **Duration:** 30s
+    **Additional Effect:** When carrying silver specs, duration increases to 60s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_tempered_evasion
+  name: Potion of Tempered Evasion
+  number: 110
+  category: Crucible Item
+  sellPrice: 21
+  description: |
+    Grants **Liquid Evasion** to self or familiar.
+    **Liquid Evasion Effect:** Increases evasion by 25%
+    **Duration:** 30s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_feral_evasion
+  name: Potion of Feral Evasion
+  number: 111
+  category: Crucible Item
+  sellPrice: 36
+  description: |
+    Inflicts **Blind** while also granting **Liquid Evasion** to self or familiar.
+    **Blind Duration:** 30s
+    **Liquid Evasion Effect:** Increases evasion by 25%
+    **Duration:** 60s
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_tempered_constitution
+  name: Potion of Tempered Constitution
+  number: 112
+  category: Crucible Item
+  sellPrice: 95
+  description: |
+    Grants **Liquid Constitution** while also restoring 10% of HP to self or familiar.
+    **Liquid Constitution Effect:** Increases maximum HP by 20%
+    Effect ends upon combat completion.
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_feral_constitution
+  name: Potion of Feral Constitution
+  number: 113
+  category: Crucible Item
+  sellPrice: 140
+  description: |
+    Inflicts **Pollen** while also granting **Liquid Constitution** and restoring 10% of HP to self or familiar.
+    **Pollen Duration:** 180s
+    **Liquid Constitution Effect:** Increases maximum HP by 30%
+    Effect ends upon combat completion.
+    ※Can only be used on Crucible battlegrounds.
+- id: potion_of_breathtaking_swiftness
+  name: Potion of Breathtaking Swiftness
+  number: 114
+  category: Crucible Item
+  sellPrice: 225
+  description: |
+    Grants **Spirit of the Breathtaker** to self.
+    **Spirit of the Breathtaker Effect:** Increases movement speed by 20%, evasion by 5%, and poison resistance by 100%
+    Effect ends upon combat completion.
+    ※Can only be used on Crucible battlegrounds.
+- id: crucible_feather
+  name: Crucible Feather
+  number: 115
+  category: Crucible Item
+  sellPrice: 43
+  description: |
+    Grants 100 TP to self or familiar.
+    **Additional Effect:** When carrying a spirited ring, grants 250 TP
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_wildfire_weakener
+  name: G1 Wildfire Weakener
+  number: 116
+  category: Crucible Item
+  sellPrice: 47
+  description: |
+    Grants **Through Fire** to self and nearby allies.
+    **Through Fire Effect:** 50% chance to absorb fire damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_wildfire_weakener
+  name: G2 Wildfire Weakener
+  number: 117
+  category: Crucible Item
+  sellPrice: 95
+  description: |
+    Grants **Through Fire** to self and nearby allies.
+    **Through Fire Effect:** 70% chance to absorb fire damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_wildwave_weakener
+  name: G1 Wildwave Weakener
+  number: 118
+  category: Crucible Item
+  sellPrice: 47
+  description: |
+    Grants **Through Water** to self and nearby allies.
+    **Through Water Effect:** 50% chance to absorb water damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_wildwave_weakener
+  name: G2 Wildwave Weakener
+  number: 119
+  category: Crucible Item
+  sellPrice: 95
+  description: |
+    Grants **Through Water** to self and nearby allies.
+    **Through Water Effect:** 70% chance to absorb water damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_wildearth_weakener
+  name: G1 Wildearth Weakener
+  number: 120
+  category: Crucible Item
+  sellPrice: 47
+  description: |
+    Grants **Through Earth** to self and nearby allies.
+    **Through Earth Effect:** 50% chance to absorb earth damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_wildearth_weakener
+  name: G2 Wildearth Weakener
+  number: 121
+  category: Crucible Item
+  sellPrice: 95
+  description: |
+    Grants **Through Earth** to self and nearby allies.
+    **Through Earth Effect:** 70% chance to absorb earth damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_wildthunder_weakener
+  name: G1 Wildthunder Weakener
+  number: 122
+  category: Crucible Item
+  sellPrice: 47
+  description: |
+    Grants **Through Thunder** to self and nearby allies.
+    **Through Thunder Effect:** 50% chance to absorb lightning damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_wildthunder_weakener
+  name: G2 Wildthunder Weakener
+  number: 123
+  category: Crucible Item
+  sellPrice: 95
+  description: |
+    Grants **Through Thunder** to self and nearby allies.
+    **Through Thunder Effect:** 70% chance to absorb lightning damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_wildgale_weakener
+  name: G1 Wildgale Weakener
+  number: 124
+  category: Crucible Item
+  sellPrice: 47
+  description: |
+    Grants **Through Wind** to self and nearby allies.
+    **Through Wind Effect:** 50% chance to absorb wind damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_wildgale_weakener
+  name: G2 Wildgale Weakener
+  number: 125
+  category: Crucible Item
+  sellPrice: 95
+  description: |
+    Grants **Through Wind** to self and nearby allies.
+    **Through Wind Effect:** 70% chance to absorb wind damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_wildfreeze_weakener
+  name: G1 Wildfreeze Weakener
+  number: 126
+  category: Crucible Item
+  sellPrice: 47
+  description: |
+    Grants **Through Ice** to self and nearby allies.
+    **Through Ice Effect:** 50% chance to absorb ice damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: g2_wildfreeze_weakener
+  name: G2 Wildfreeze Weakener
+  number: 127
+  category: Crucible Item
+  sellPrice: 95
+  description: |
+    Grants **Through Ice** to self and nearby allies.
+    **Through Ice Effect:** 70% chance to absorb ice damage as HP
+    **Duration:** 15s
+    ※Can only be used on Crucible battlegrounds.
+- id: fang_of_fire
+  name: Fang of Fire
+  number: 128
+  category: Crucible Item
+  sellPrice: 45
+  description: |
+    Deals ranged fire damage with a potency of 2,500 to target and all enemies within 12 yalms of it.
+    **Additional Effect:** Targets suffering from **Deep Freeze** receive additional damage with a potency of 1,000
+    Damage is affected by magic damage increase effects of other beast gear, items, or abilities.
+    ※Can only be used on Crucible battlegrounds.
+- id: fang_of_ice
+  name: Fang of Ice
+  number: 129
+  category: Crucible Item
+  sellPrice: 45
+  description: |
+    Deals ranged ice damage with a potency of 2,000 to target and all enemies within 12 yalms of it.
+    **Additional Effect:** Afflicts target with **Deep Freeze**
+    **Duration:** 20s
+    Damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    ※Can only be used on Crucible battlegrounds.
+- id: fang_of_water
+  name: Fang of Water
+  number: 130
+  category: Crucible Item
+  sellPrice: 45
+  description: |
+    Deals ranged water damage with a potency of 2,000 to target and all enemies within 12 yalms of it.
+    **Additional Effect:** Removes one beneficial status from target, thereby granting 100 TP
+    Damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    ※Can only be used on Crucible battlegrounds.
+- id: fang_of_lightning
+  name: Fang of Lightning
+  number: 131
+  category: Crucible Item
+  sellPrice: 45
+  description: |
+    Deals ranged lightning damage with a potency of 2,000 to target and all enemies within 12 yalms of it.
+    **Additional Effect:** Afflicts target with **Paralysis**
+    **Duration:** 30s
+    Damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    ※Can only be used on Crucible battlegrounds.
+- id: fang_of_earth
+  name: Fang of Earth
+  number: 132
+  category: Crucible Item
+  sellPrice: 45
+  description: |
+    Deals ranged earth damage with a potency of 2,000 to target and all enemies within 12 yalms of it.
+    **Additional Effect:** Afflicts target with **Heavy**
+    **Duration:** 60s
+    Damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    ※Can only be used on Crucible battlegrounds.
+- id: fang_of_wind
+  name: Fang of Wind
+  number: 133
+  category: Crucible Item
+  sellPrice: 45
+  description: |
+    Deals ranged wind damage with a potency of 2,000 to target and all enemies within 12 yalms of it.
+    **Additional Effect:** 15-yalm knockback
+    Damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    ※Can only be used on Crucible battlegrounds.
+- id: vampiric_fang
+  name: Vampiric Fang
+  number: 134
+  category: Crucible Item
+  sellPrice: 68
+  description: |
+    Deals ranged piercing physical damage with a potency of 1,500 to target and all enemies within 12 yalms of it.
+    Potency increases up to 3,300 as your maximum HP increases, and damage is partially absorbed as HP.
+    ※Can only be used on Crucible battlegrounds.
+- id: vampiric_essence
+  name: Vampiric Essence
+  number: 135
+  category: Crucible Item
+  sellPrice: 378
+  description: |
+    Grants **Life Siphon** to self or familiar.
+    **Life Siphon Effect:** Absorbs 10% of damage dealt as HP
+    **Duration:** 60s
+    **Additional Effect:** When carrying demonic armor, duration increases to 90s
+    ※Can only be used on Crucible battlegrounds.
+- id: tome_of_reflection
+  name: Tome of Reflection
+  number: 136
+  category: Crucible Item
+  sellPrice: 81
+  description: |
+    Grants **Reflect** to self or familiar.
+    **Reflect Effect:** Reflects most magic attacks back at the caster
+    **Duration:** 30s
+    **Additional Effect:** When carrying a hexed hat, duration increases to 60s
+    ※Can only be used on Crucible battlegrounds.
+- id: tome_of_the_impervious
+  name: Tome of the Impervious
+  number: 137
+  category: Crucible Item
+  sellPrice: 63
+  description: |
+    Grants five stacks of **Blink** to self or familiar.
+    **Blink Effect:** Nullifies most physical attacks, reducing one stack per nullification
+    **Duration:** 120s
+    **Spirit of the Breathtaker Effect:** Grants three additional stacks
+    ※Can only be used on Crucible battlegrounds.
+- id: temporal_sand
+  name: Temporal Sand
+  number: 138
+  category: Crucible Item
+  sellPrice: 315
+  description: |
+    Grants **Sandstill** to self.
+    **Sandstill Effect:** Returns you to the moment combat commences upon incapacitation
+    ※Can only be used outside of combat.
+- id: celestial_sand
+  name: Celestial Sand
+  number: 139
+  category: Crucible Item
+  sellPrice: 72
+  description: |
+    Calls down a **Starstorm** that deals fire damage with a potency of 3,000 to target and all enemies within 18 yalms of it.
+    **Additional Effect:** Increases **TP Gauge** by 50 for every enemy hit
+    **Additional Effect:** Reduces target's fire resistance by 20%
+    **Duration:** 60s
+    Damage is affected by magic damage increase effects of other beast gear, items, and abilities.
+    ※Can only be used on Crucible battlegrounds.
+- id: beast_potion_kit
+  name: Beast Potion Kit
+  number: 140
+  category: Crucible Item
+  sellPrice: 189
+  description: |
+    Grants **Auto-potion** to self.
+    **Auto-potion Effect:** Restores 40% of HP automatically when HP falls below 50%
+    50% chance for the effect to expire when triggered. Chance is reduced to 10% when under the effect of **Spirit of the Breathtaker**.
+    **Duration:** 150s
+    **Additional Effect:** When carrying thief's garb, duration increases to 240s
+    ※Can only be used on Crucible battlegrounds.
+- id: beast_remedy_kit
+  name: Beast Remedy Kit
+  number: 141
+  category: Crucible Item
+  sellPrice: 32
+  description: |
+    Grants **Auto-remedy** to self.
+    **Auto-remedy Effect:** Automatically cures the next status ailment suffered
+    **Duration:** 240s
+    ※Can only be used on Crucible battlegrounds.
+- id: spellforge_tome
+  name: Spellforge Tome
+  number: 142
+  category: Crucible Item
+  sellPrice: 63
+  description: |
+    Ensures all attacks deal magic damage. Effects also apply to familiars.
+    **Duration:** 180s
+    ※Can only be used on Crucible battlegrounds.
+- id: steelsting_tome
+  name: Steelsting Tome
+  number: 143
+  category: Crucible Item
+  sellPrice: 63
+  description: |
+    Ensures all attacks deliver physical damage. Effects also apply to familiars.
+    **Duration:** 180s
+    ※Can only be used on Crucible battlegrounds.
+- id: g1_primafodder
+  name: G1 Primafodder
+  number: 144
+  category: Feed
+  sellPrice: 0
+  description: |
+    Maximum HP +15%
+    Damage Dealt +5%
+    **Additional Effect:** Restores 10% of HP upon consumption
+    **Additional Effect:** Increases familiar's earned EXP by 25%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: g2_primafodder
+  name: G2 Primafodder
+  number: 145
+  category: Feed
+  sellPrice: 0
+  description: |
+    Maximum HP +30%
+    Damage Dealt +10%
+    **Additional Effect:** Restores 18% of HP upon consumption
+    **Additional Effect:** Increases familiar's earned EXP by 50%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: meat_simular
+  name: Meat Simular
+  number: 146
+  category: Feed
+  sellPrice: 0
+  description: |
+    Physical Damage Dealt +20%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: hydrolixer
+  name: Hydrolixer
+  number: 147
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Aetheric Burst** Potency +35%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: honey_simular
+  name: Honey Simular
+  number: 148
+  category: Feed
+  sellPrice: 0
+  description: |
+    Physical Vulnerability -25%
+    **Aetheric Burst** Potency +10%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: crab_ball_simular
+  name: Crab Ball Simular
+  number: 149
+  category: Feed
+  sellPrice: 0
+  description: |
+    Critical Hit Rate +35%
+    Magic Vulnerability -30%
+    Maximum HP +10%
+    **Additional Effect:** Restores 7% of HP upon consumption
+    [Suitable for soulkin.]
+- id: banana_simular
+  name: Banana Simular
+  number: 150
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Aetheric Burst** Potency +10%
+    Grants one stack of **Physical Damage Up** upon landing a critical hit.
+    **Physical Damage Up Effect:** Increases physical damage dealt by 10%
+    **Duration:** 30s
+    **Maximum Stacks:** 5
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: berry_simular
+  name: Berry Simular
+  number: 151
+  category: Feed
+  sellPrice: 0
+  description: |
+    Critical Hit Power +60
+    **Aetheric Burst** Potency +10%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: egg_simular
+  name: Egg Simular
+  number: 152
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Haste** +5%
+    Physical Damage Dealt +25%
+    [Suitable for beastkin, vilekin, cloudkin, wavekin, and scalekin.]
+- id: yellow_egg_simular
+  name: Yellow Egg Simular
+  number: 153
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Haste** +15%
+    Damage Dealt +5%
+    Maximum HP +35%
+    **Additional Effect:** Restores 20% of HP upon consumption
+    [Suitable for seedkin.]
+- id: tomato_simular
+  name: Tomato Simular
+  number: 154
+  category: Feed
+  sellPrice: 0
+  description: |
+    Evasion +10%
+    Physical Damage Dealt +10%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, and ashkin.]
+- id: milk_simular
+  name: Milk Simular
+  number: 155
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Haste** +5%
+    Maximum HP +50%
+    **Additional Effect:** Restores 26% of HP upon consumption
+    [Suitable for beastkin, vilekin, cloudkin, wavekin, and scalekin.]
+- id: rolanberry_cheese_simular
+  name: Rolanberry Cheese Simular
+  number: 156
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Haste** +5%
+    **Aetheric Burst** Potency +25%
+    [Suitable for beastkin, vilekin, cloudkin, wavekin, and scalekin.]
+- id: porcini_simular
+  name: Porcini Simular
+  number: 157
+  category: Feed
+  sellPrice: 0
+  description: |
+    Poison Resistance +100%
+    Damage Taken -10%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: morel_simular
+  name: Morel Simular
+  number: 158
+  category: Feed
+  sellPrice: 0
+  description: |
+    Paralysis Resistance +100%
+    Damage Taken -10%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: black_truffle_simular
+  name: Black Truffle Simular
+  number: 159
+  category: Feed
+  sellPrice: 0
+  description: |
+    Blind Resistance +100%
+    Damage Taken -10%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: white_truffle_simular
+  name: White Truffle Simular
+  number: 160
+  category: Feed
+  sellPrice: 0
+  description: |
+    Petrification Resistance +100%
+    Damage Taken -10%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: mushroom_simular
+  name: Mushroom Simular
+  number: 161
+  category: Feed
+  sellPrice: 0
+  description: |
+    Sleep Resistance +100%
+    Damage Taken -10%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: sole_simular
+  name: Sole Simular
+  number: 162
+  category: Feed
+  sellPrice: 0
+  description: |
+    Physical Damage Dealt +20%
+    TP Accumulation +50%
+    [Suitable for cloudkin.]
+- id: magnum_water
+  name: Magnum Water
+  number: 163
+  category: Feed
+  sellPrice: 0
+  description: |
+    Maximum HP +30%
+    Damage Dealt +15%
+    **Additional Effect:** Restores 18% of HP upon consumption
+    Grants one stack of **Rehabilitation** upon defeating an enemy.
+    **Rehabilitation Effect:** Restores 3% of maximum HP at regular intervals
+    **Duration:** 6s
+    **Maximum Stacks:** 8
+    [Suitable for wavekin.]
+- id: blood_simular
+  name: Blood Simular
+  number: 164
+  category: Feed
+  sellPrice: 0
+  description: |
+    Critical Hit Rate +50%
+    Damage Dealt +35%
+    **Additional Effect:** Inflicts damage over time on self
+    [Suitable for vilekin.]
+- id: noble_blood_simular
+  name: Noble Blood Simular
+  number: 165
+  category: Feed
+  sellPrice: 0
+  description: |
+    Maximum HP +20%
+    Critical Hit Rate +15%
+    **Additional Effect:** Restores 13% of HP upon consumption
+    5% chance to grant one stack of **Rehabilitation** upon landing a critical hit.
+    **Rehabilitation Effect:** Restores 3% of maximum HP at regular intervals
+    **Duration:** 6s
+    **Maximum Stacks:** 8
+    [Suitable for wavekin.]
+- id: lily_simular
+  name: Lily Simular
+  number: 166
+  category: Feed
+  sellPrice: 0
+  description: |
+    Damage Dealt +10%
+    Damage Taken -10%
+    **Additional Effect:** Preserves the effects of feed when resting at a campsite
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: flounder_simular
+  name: Flounder Simular
+  number: 167
+  category: Feed
+  sellPrice: 0
+  description: |
+    Physical Damage Dealt +10%
+    30% chance to recover TP upon completing a combo with a familiar instinctual skill.
+    [Suitable for beastkin, vilekin, seedkin, wavekin, scalekin, and ashkin.]
+- id: white_scorpion_simular
+  name: White Scorpion Simular
+  number: 168
+  category: Feed
+  sellPrice: 0
+  description: |
+    Grants **Reflect** when summoned by a beastmaster.
+    **Reflect Effect:** Reflects most magic attacks back at the caster
+    **Duration:** 60s
+    [Suitable for scalekin.]
+- id: black_scorpion_simular
+  name: Black Scorpion Simular
+  number: 169
+  category: Feed
+  sellPrice: 0
+  description: |
+    Damage Dealt +15%
+    Damage Taken -35%
+    3% chance to inflict **Poison** on self upon suffering damage.
+    **Duration:** 30s
+    [Suitable for scalekin.]
+- id: herring_simular
+  name: Herring Simular
+  number: 170
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Aetheric Burst** Potency +25%
+    35% chance to recover TP upon completing a combo with a familiar instinctual skill.
+    [Suitable for cloudkin.]
+- id: angelfish_simular
+  name: Angelfish Simular
+  number: 171
+  category: Feed
+  sellPrice: 0
+  description: |
+    Damage Taken -10%
+    TP Accumulation +30%
+    [Suitable for beastkin, vilekin, seedkin, wavekin, and ashkin.]
+- id: grape_simular
+  name: Grape Simular
+  number: 172
+  category: Feed
+  sellPrice: 0
+  description: |
+    Critical Hit Rate +35%
+    Physical Damage Dealt +15%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: orange_simular
+  name: Orange Simular
+  number: 173
+  category: Feed
+  sellPrice: 0
+  description: |
+    Critical Hit Rate +25%
+    **Aetheric Burst** Potency +20%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: lugworm_simular
+  name: Lugworm Simular
+  number: 174
+  category: Feed
+  sellPrice: 0
+  description: |
+    Maximum HP +30%
+    **Additional Effect:** Restores 18% of HP upon consumption
+    Grants one stack of **Magic Vulnerability Down** upon suffering damage.
+    **Magic Vulnerability Down Effect:** Reduces magic damage taken by 5%
+    **Duration:** 60s
+    **Maximum Stacks:** 8
+    [Suitable for soulkin.]
+- id: crucible_tonic
+  name: Crucible Tonic
+  number: 175
+  category: Feed
+  sellPrice: 0
+  description: |
+    Grants one stack of **High Wire** upon defeating an enemy.
+    **High Wire Effect:** Increases damage dealt by 15% and reduces damage taken by 8%
+    **Duration:** 60s
+    **Maximum Stacks:** 4
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: carrot_simular
+  name: Carrot Simular
+  number: 176
+  category: Feed
+  sellPrice: 0
+  description: |
+    Evasion +10%
+    **Aetheric Burst** Potency +5%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, and ashkin.]
+- id: onion_simular
+  name: Onion Simular
+  number: 177
+  category: Feed
+  sellPrice: 0
+  description: |
+    Evasion +15%
+    Damage Taken -5%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, and ashkin.]
+- id: lettuce_simular
+  name: Lettuce Simular
+  number: 178
+  category: Feed
+  sellPrice: 0
+  description: |
+    Evasion +5%
+    Grants one stack of **High Wire** for each attack evaded.
+    **High Wire Effect:** Increases damage dealt by 15% and reduces damage taken by 8%
+    **Duration:** 60s
+    **Maximum Stacks:** 4
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, and ashkin.]
+- id: lemon_simular
+  name: Lemon Simular
+  number: 179
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Aetheric Burst** Potency +10%
+    Grants one stack of **Blink** upon landing a critical hit.
+    **Blink Effect:** Nullifies most physical attacks, reducing one stack per nullification
+    **Duration:** 120s
+    **Maximum Stacks:** 5
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: untaming_oil
+  name: Untaming Oil
+  number: 180
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Haste** +20%
+    Grants one stack of **High Wire** for each combo completed with a familiar instinctual skill.
+    **High Wire Effect:** Increases damage dealt by 15% and reduces damage taken by 8%
+    **Duration:** 60s
+    **Maximum Stacks:** 4
+    [Suitable for soulkin.]
+- id: mucus_simular
+  name: Mucus Simular
+  number: 181
+  category: Feed
+  sellPrice: 0
+  description: |
+    Damage Dealt +30%
+    Damage Taken -30%
+    Inflicts **Nightmare** on self upon landing a critical hit.
+    **Duration:** 30s
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: sap_simular
+  name: Sap Simular
+  number: 182
+  category: Feed
+  sellPrice: 0
+  description: |
+    Physical Vulnerability -40%
+    **Aetheric Burst** Potency +20%
+    [Suitable for scalekin.]
+- id: salt_simular
+  name: Salt Simular
+  number: 183
+  category: Feed
+  sellPrice: 0
+  description: |
+    Evasion +25%
+    15% chance to grant **Stoneskin** upon evading an attack.
+    **Stoneskin Effect:** Absorbs damage equivalent to 12% of maximum HP
+    **Duration:** 60s
+    [Suitable for soulkin.]
+- id: syrup_simular
+  name: Syrup Simular
+  number: 184
+  category: Feed
+  sellPrice: 0
+  description: |
+    Damage Dealt +30%
+    Physical Vulnerability -30%
+    3% chance to inflict **Paralysis** on self upon suffering damage.
+    **Duration:** 30s
+    [Suitable for vilekin.]
+- id: cream_cheese_simular
+  name: Cream Cheese Simular
+  number: 185
+  category: Feed
+  sellPrice: 0
+  description: |
+    Maximum HP +50%
+    Damage Taken -20%
+    **Additional Effect:** Restores 26% of HP upon consumption
+    50% chance to grant one stack of **Haste** upon suffering damage.
+    **Haste Effect:** Reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay by 3%
+    **Duration:** 60s
+    **Maximum Stacks:** 5
+    [Suitable for seedkin.]
+- id: red_egg_simular
+  name: Red Egg Simular
+  number: 186
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Haste** +15%
+    Damage Dealt +30%
+    **Additional Effect:** Inflicts damage over time on self
+    [Suitable for beastkin, vilekin, cloudkin, wavekin, and scalekin.]
+- id: toast_simular
+  name: Toast Simular
+  number: 187
+  category: Feed
+  sellPrice: 0
+  description: |
+    Magic Vulnerability -30%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: cornbread_simular
+  name: Cornbread Simular
+  number: 188
+  category: Feed
+  sellPrice: 0
+  description: |
+    Magic Vulnerability -40%
+    **Aetheric Burst** Potency +10%
+    Maximum HP +15%
+    **Additional Effect:** Restores 10% of HP upon consumption
+    [Suitable for vilekin.]
+- id: mandrake_simular
+  name: Mandrake Simular
+  number: 189
+  category: Feed
+  sellPrice: 0
+  description: |
+    Physical Damage Dealt +40%
+    Inflicts **Blind** on self upon landing a critical hit.
+    **Duration:** 30s
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: tarantula_simular
+  name: Tarantula Simular
+  number: 190
+  category: Feed
+  sellPrice: 0
+  description: |
+    Critical Hit Rate +25%
+    Grants one stack of **Damage Up** upon landing a critical hit.
+    **Damage Up Effect:** Increases damage dealt by 10%
+    **Duration:** 60s
+    **Maximum Stacks:** 5
+    [Suitable for soulkin.]
+- id: belladonna_simular
+  name: Belladonna Simular
+  number: 191
+  category: Feed
+  sellPrice: 0
+  description: |
+    Damage Taken -30%
+    Maximum HP +30%
+    **Additional Effect:** Restores 18% of HP upon consumption
+    3% chance to inflict **Petrification** on self upon suffering damage.
+    **Duration:** 30s
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, soulkin, and ashkin.]
+- id: steak_simular
+  name: Steak Simular
+  number: 192
+  category: Feed
+  sellPrice: 0
+  description: |
+    Delivers blunt physical damage with a potency of 350 each time your familiar suffers physical damage.
+    Counter damage is affected by physical damage increase effects of other feed and crucible items, and your familiar's strength.
+    [Suitable for beastkin, vilekin, cloudkin, scalekin, and ashkin.]
+- id: roe_simular
+  name: Roe Simular
+  number: 193
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Aetheric Burst** Potency +10%
+    30% chance to recover TP upon completing a combo with a familiar instinctual skill.
+    [Suitable for beastkin, vilekin, seedkin, wavekin, scalekin, and ashkin.]
+- id: herbal_tea_simular
+  name: Herbal Tea Simular
+  number: 194
+  category: Feed
+  sellPrice: 0
+  description: |
+    Grants **Stoneskin** when summoned by a beastmaster.
+    **Stoneskin Effect:** Absorbs damage equivalent to 24% of maximum HP
+    **Duration:** 60s
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: honeycomb_simular
+  name: Honeycomb Simular
+  number: 195
+  category: Feed
+  sellPrice: 0
+  description: |
+    Physical Vulnerability -30%
+    Damage Dealt +10%
+    30% chance to recover TP upon completing a combo with a familiar instinctual skill.
+    [Suitable for soulkin.]
+- id: orange_juice_simular
+  name: Orange Juice Simular
+  number: 196
+  category: Feed
+  sellPrice: 0
+  description: |
+    Magic Damage Dealt +30%
+    **Aetheric Burst** Potency +15%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: grape_juice_simular
+  name: Grape Juice Simular
+  number: 197
+  category: Feed
+  sellPrice: 0
+  description: |
+    Physical Damage Dealt +30%
+    **Aetheric Burst** Potency +50%
+    Maximum HP -80%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: skewer_simular
+  name: Skewer Simular
+  number: 198
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Slow** +200%
+    Physical Damage Dealt +50%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: pineapple_juice_simular
+  name: Pineapple Juice Simular
+  number: 199
+  category: Feed
+  sellPrice: 0
+  description: |
+    **Slow** +200%
+    Magic Damage Dealt +50%
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, scalekin, and ashkin.]
+- id: oyster_simular
+  name: Oyster Simular
+  number: 200
+  category: Feed
+  sellPrice: 0
+  description: |
+    Increases **Familiar TP Gauge** by 100 upon commencing battle or when summoned by a beastmaster during combat.
+    [Suitable for cloudkin.]
+- id: blue_cheese_simular
+  name: Blue Cheese Simular
+  number: 201
+  category: Feed
+  sellPrice: 0
+  description: |
+    Deals unaspected damage with a potency of 350 each time your familiar suffers magic damage.
+    Counter damage is affected by magic damage increase effects of other feed and crucible items, and your familiar's intelligence.
+    [Suitable for seedkin and wavekin.]
+- id: cottage_cheese_simular
+  name: Cottage Cheese Simular
+  number: 202
+  category: Feed
+  sellPrice: 0
+  description: |
+    Maximum HP +30%
+    **Haste** +15%
+    **Additional Effect:** Restores 18% of HP upon consumption
+    30% chance to recover TP upon completing a combo with a familiar instinctual skill.
+    [Suitable for vilekin.]
+- id: lassi_simular
+  name: Lassi Simular
+  number: 203
+  category: Feed
+  sellPrice: 0
+  description: |
+    Maximum HP +30%
+    **Additional Effect:** Restores 18% of HP upon consumption
+    **Additional Effect:** Completely restores HP at campsites
+    [Suitable for beastkin, vilekin, cloudkin, seedkin, wavekin, and scalekin.]

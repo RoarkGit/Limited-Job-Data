@@ -74,6 +74,23 @@ The game's inline element and damage-type glyphs, for uploading as Discord emoji
 
 These are not `ui/icon` entries and cannot be fetched from xivapi. They live in the font icon data (`common/font/gfdata.gfd` indexing into `common/font/fonticon_*.tex`), which is why they render inline next to text in the game. Extracted once from a local game install at GFD ids 56-61 (elements, in `Action.Aspect` order) and 185-188 (Blunt, Piercing, Slashing, Magic, matching `XBMElement` rows 7-9). Re-extract from a game install if they ever change.
 
+### `beast/items.yaml`
+
+Every Beastmaster item across the three categories the game itself defines under `XBMItemType`: Beast Gear, Crucible Item, and Feed.
+
+| Field | Description |
+|---|---|
+| `id` | Kebab-case identifier |
+| `name` | Display name |
+| `number` | The item's row in `XBMItem`; stable, but not a number shown in any in-game UI |
+| `category` | Beast Gear, Crucible Item, or Feed |
+| `sellPrice` | Territory tokens received selling to the in-run shop; 0 for Feed, which cannot be sold |
+| `description` | In-game item description |
+
+### `beast/item-images/`
+
+PNG item icons for every item, named by item `id` (e.g. `celestial_sand.png`).
+
 ### `weeklyTargets.yaml`
 
 Weekly rotation data for the Masked Carnivale and duty roulettes, organized by expansion and difficulty tier.
