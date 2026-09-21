@@ -1,0 +1,1684 @@
+# Beastmaster beast data.
+#
+# Extracted from the game's Excel sheets: XBMPet joined to Pet, Action,
+# ActionTransient, PlaceName and ContentFinderCondition. Field names and the eight
+# classifications come from the Master's Bestiary UI strings (Addon 17712 to 17748).
+# Portraits in images/ are ui/icon/242000/2420NN_hr1.tex.
+#
+#   id: kebab/snake-case identifier, matching the file name in images/
+#   name: display name
+#   number: the beast's number in the Master's Bestiary
+#   classification: Beastkin, Vilekin, Cloudkin, Seedkin, Wavekin, Scalekin, Soulkin, or Ashkin
+#   satiety: how many feedings the beast can take
+#   habitat: where the beast can be captured
+#   autoAttack: the element and range of the beast's auto-attack
+#   trick: the beast's Trick action (Lv. 8), with its full in-game tooltip
+#   temperedRelease: the beast's Tempered Release action (Lv. 18), with its full tooltip
+#   stats: Strength, Intelligence, Phys. Resistance, Mag. Resistance, and Constitution ratings
+#
+# trick and temperedRelease each carry name, element, range, radius and description.
+# element is omitted when the action deals no damage; range and radius when they are zero.
+# Tooltips have the boilerplate every beast shares stripped (TP gauge cost, instinctual
+# affinity, the combo note, Lingering Vantage, and the One with Nature requirement).
+
+- id: cu_sith
+  name: Cu Sith
+  number: 1
+  classification: Beastkin
+  satiety: 3
+  habitat: |
+    Captured via quest
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Rake
+    element: Slashing
+    affinity: Rampant
+    range: 5
+    radius: 6
+    description: |
+      Orders your familiar to use **Rake**, delivering a slashing physical attack with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Relentless Rake
+    element: Slashing
+    range: 5
+    description: |
+      Orders your familiar to use **Relentless Rake**, delivering a sixfold slashing physical attack with a potency of 150.
+  stats:
+    strength: 100
+    intelligence: 91
+    physicalResistance: 100
+    magicalResistance: 79
+    constitution: 100
+- id: squirrel
+  name: Squirrel
+  number: 2
+  classification: Beastkin
+  satiety: 3
+  habitat: |
+    Central Shroud
+  autoAttack:
+    element: Fire
+    range: 5
+  trick:
+    name: Somersault Slash
+    element: Fire
+    affinity: Rampant
+    range: 2
+    radius: 8
+    description: |
+      Orders your familiar to use **Somersault Slash**, dealing fire damage with a potency of 500 to all enemies in a straight line before and behind it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Scamper
+    radius: 20
+    description: |
+      Orders your familiar to use **Scamper**, reducing weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay by 15% for nearby party members.
+      **Duration:** 30s
+  stats:
+    strength: 91
+    intelligence: 100
+    physicalResistance: 91
+    magicalResistance: 91
+    constitution: 91
+- id: lamb
+  name: Lamb
+  number: 3
+  classification: Beastkin
+  satiety: 4
+  habitat: |
+    Middle La Noscea
+  autoAttack:
+    element: Blunt
+    range: 5
+  trick:
+    name: Fleece Butt
+    element: Blunt
+    affinity: Rampant
+    range: 4
+    radius: 5
+    description: |
+      Orders your familiar to use **Fleece Butt**, delivering a blunt physical attack with a potency of 500 to all enemies in a straight line before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Lullaby
+    radius: 8
+    description: |
+      Orders your familiar to use **Lullaby**, afflicting all nearby enemies with **Sleep**.
+      **Duration:** 30s
+      **Additional Effect:** Increases sleep resistance of all nearby party members, and reduces the duration of sleep-related status afflictions by 80%
+      **Duration:** 90s
+  stats:
+    strength: 82
+    intelligence: 82
+    physicalResistance: 82
+    magicalResistance: 82
+    constitution: 82
+- id: pugil
+  name: Pugil
+  number: 4
+  classification: Wavekin
+  satiety: 2
+  habitat: |
+    Middle La Noscea
+  autoAttack:
+    element: Water
+    range: 5
+  trick:
+    name: Screwdriver
+    element: Water
+    affinity: Durant
+    range: 5
+    radius: 6
+    description: |
+      Orders your familiar to use **Screwdriver**, dealing water damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Water Wall
+    radius: 20
+    description: |
+      Orders your familiar to use **Water Wall**, reducing nearby party members' magic vulnerability by 20%.
+      **Duration:** 48s
+      **Additional Effect:** Increases paralysis resistance of all nearby party members, and reduces the duration of paralysis-related status afflictions by 80%
+      **Duration:** 90s
+  stats:
+    strength: 100
+    intelligence: 100
+    physicalResistance: 100
+    magicalResistance: 100
+    constitution: 100
+- id: opo-opo
+  name: Opo-opo
+  number: 5
+  classification: Beastkin
+  satiety: 3
+  habitat: |
+    North Shroud
+  autoAttack:
+    element: Blunt
+    range: 25
+  trick:
+    name: Stone Throw
+    element: Blunt
+    affinity: Rampant
+    range: 25
+    radius: 8
+    description: |
+      Orders your familiar to use **Stone Throw**, delivering a blunt physical attack with a potency of 500 to target and all enemies nearby it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Pins and Nails
+    element: Unaspected
+    range: 25
+    description: |
+      Orders your familiar to use **Pins and Nails**, dealing unaspected damage with a potency of 750.
+      **Additional Effect:** Afflicts target with **Paralysis**
+      **Duration:** 45s
+  stats:
+    strength: 97
+    intelligence: 97
+    physicalResistance: 97
+    magicalResistance: 97
+    constitution: 76
+- id: dodo
+  name: Dodo
+  number: 6
+  classification: Cloudkin
+  satiety: 2
+  habitat: |
+    Lower La Noscea
+  autoAttack:
+    element: Earth
+    range: 5
+  trick:
+    name: Fowl Stench
+    element: Earth
+    affinity: Eldritch
+    range: 4
+    radius: 5
+    description: |
+      Orders your familiar to use **Fowl Stench**, dealing earth damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Afflicts targets with **Blind**
+      **Duration:** 30s
+  temperedRelease:
+    name: Strut
+    radius: 20
+    description: |
+      Orders your familiar to use **Strut**, reducing earth damage taken by 15% for nearby party members, and occasionally nullifying it entirely.
+      **Duration:** 60s
+      **Additional Effect:** Increases blind resistance of all nearby party members, and reduces the duration of blind-related status afflictions by 80%
+      **Duration:** 90s
+  stats:
+    strength: 91
+    intelligence: 91
+    physicalResistance: 100
+    magicalResistance: 100
+    constitution: 100
+- id: coblyn
+  name: Coblyn
+  number: 7
+  classification: Soulkin
+  satiety: 1
+  habitat: |
+    Western Thanalan
+  autoAttack:
+    element: Lightning
+    range: 5
+  trick:
+    name: Bestial Thunder
+    element: Lightning
+    affinity: Eldritch
+    range: 25
+    description: |
+      Orders your familiar to use **Bestial Thunder**, dealing ranged lightning damage with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Vulcanize
+    radius: 20
+    description: |
+      Orders your familiar to use **Vulcanize**, reducing nearby party members' physical vulnerability by 20%.
+      **Duration:** 48s
+      **Additional Effect:** Increases poison resistance of all nearby party members, and reduces the duration of poison-related status afflictions by 80%
+      **Duration:** 30s
+  stats:
+    strength: 100
+    intelligence: 100
+    physicalResistance: 91
+    magicalResistance: 100
+    constitution: 100
+- id: diremite
+  name: Diremite
+  number: 8
+  classification: Vilekin
+  satiety: 1
+  habitat: |
+    Central Shroud
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Deadly Thrust
+    element: Piercing
+    affinity: Rampant
+    range: 5
+    description: |
+      Orders your familiar to use **Deadly Thrust**, delivering a piercing physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Afflicts target with **Poison**
+      **Potency:** 75
+      **Duration:** 30s
+  temperedRelease:
+    name: Silkscreen
+    element: Unaspected
+    range: 15
+    radius: 16
+    description: |
+      Orders your familiar to use **Silkscreen**, dealing unaspected damage with a potency of 450 to all enemies in a straight line before it.
+      **Additional Effect:** 15-yalm knockback and **Bind+** that cannot be nullified by suffering damage
+      **Duration:** 30s
+  stats:
+    strength: 100
+    intelligence: 100
+    physicalResistance: 100
+    magicalResistance: 100
+    constitution: 100
+- id: megalocrab
+  name: Megalocrab
+  number: 9
+  classification: Wavekin
+  satiety: 2
+  habitat: |
+    Middle La Noscea
+  autoAttack:
+    element: Water
+    range: 25
+  trick:
+    name: Drenching Blow
+    element: Water
+    affinity: Durant
+    range: 25
+    radius: 8
+    description: |
+      Orders your familiar to use **Drenching Blow**, dealing water damage with a potency of 500 to target and all enemies nearby it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Bubble Shower
+    element: Water
+    range: 8
+    radius: 9
+    description: |
+      Orders your familiar to use **Bubble Shower**, dealing water damage with a potency of 450 to all enemies in a cone before it.
+      **Additional Effect:** Reduces targets' water resistance by 20%
+      **Duration:** 60s
+  stats:
+    strength: 97
+    intelligence: 97
+    physicalResistance: 97
+    magicalResistance: 97
+    constitution: 97
+- id: wespe
+  name: Wespe
+  number: 10
+  classification: Vilekin
+  satiety: 1
+  habitat: |
+    Central Thanalan
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Sharp Sting
+    element: Piercing
+    affinity: Volant
+    range: 5
+    description: |
+      Orders your familiar to use **Sharp Sting**, delivering a piercing physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Afflicts target with **Poison**
+      **Potency:** 75
+      **Duration:** 30s
+  temperedRelease:
+    name: Final Sting
+    element: Piercing
+    range: 5
+    description: |
+      Orders your familiar to use **Final Sting**, delivering a piercing physical attack with a potency of 2,000.
+      Potency increases up to 3,000 as the target's HP decreases.
+      Familiar retreats from combat upon execution.
+  stats:
+    strength: 97
+    intelligence: 97
+    physicalResistance: 97
+    magicalResistance: 97
+    constitution: 97
+- id: vulture
+  name: Vulture
+  number: 11
+  classification: Cloudkin
+  satiety: 2
+  habitat: |
+    Western Thanalan
+  autoAttack:
+    element: Wind
+    range: 5
+  trick:
+    name: Wing Cutter
+    element: Wind
+    affinity: Volant
+    range: 4
+    radius: 5
+    description: |
+      Orders your familiar to use **Wing Cutter**, dealing wind damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Bloodcurdling Caw
+    element: Wind
+    radius: 8
+    description: |
+      Orders your familiar to use **Bloodcurdling Caw**, dealing wind damage with a potency of 450 to all nearby enemies.
+      **Additional Effect:** Removes one beneficial status from targets and increases **Familiar TP Gauge** by 100 per status removed
+  stats:
+    strength: 100
+    intelligence: 100
+    physicalResistance: 91
+    magicalResistance: 91
+    constitution: 91
+- id: mandragora
+  name: Mandragora
+  number: 12
+  classification: Seedkin
+  satiety: 2
+  habitat: |
+    Middle La Noscea
+  autoAttack:
+    element: Blunt
+    range: 5
+  trick:
+    name: Budbutt
+    element: Blunt
+    affinity: Rampant
+    range: 5
+    description: |
+      Orders your familiar to use **Budbutt**, delivering a blunt physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Heirloom Scream
+    element: Unaspected
+    radius: 8
+    description: |
+      Orders your familiar to use **Heirloom Scream**, dealing unaspected damage with a potency of 450 to all nearby enemies.
+      **Additional Effect:** Afflicts targets with **Heavy**
+      **Duration:** 30s
+  stats:
+    strength: 91
+    intelligence: 91
+    physicalResistance: 100
+    magicalResistance: 100
+    constitution: 100
+- id: geshunpest
+  name: Geshunpest
+  number: 13
+  classification: Ashkin
+  satiety: 5
+  habitat: |
+    Central Shroud
+  autoAttack:
+    element: Lightning
+    range: 25
+  trick:
+    name: Dark Thunder
+    element: Lightning
+    affinity: Eldritch
+    range: 25
+    radius: 8
+    description: |
+      Orders your familiar to use **Dark Thunder**, dealing lightning damage with a potency of 500 to target and all enemies nearby it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Odium
+    radius: 20
+    description: |
+      Orders your familiar to use **Odium**, granting **Life Siphon** to nearby party members.
+      **Life Siphon Effect:** Converts a portion of damage dealt into HP
+      **Duration:** 21s
+  stats:
+    strength: 100
+    intelligence: 100
+    physicalResistance: 100
+    magicalResistance: 100
+    constitution: 100
+- id: puk
+  name: Puk
+  number: 14
+  classification: Scalekin
+  satiety: 2
+  habitat: |
+    Middle La Noscea
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Fireball
+    element: Fire
+    affinity: Rampant
+    range: 25
+    radius: 3
+    description: |
+      Orders your familiar to use **Fireball**, dealing fire damage with a potency of 500 to target and all enemies nearby it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Tail Chase
+    element: Slashing
+    radius: 8
+    description: |
+      Orders your familiar to use **Tail Chase**, delivering a slashing physical attack with a potency of 750 to all nearby enemies.
+      **Additional Effect:** 15-yalm knockback
+  stats:
+    strength: 100
+    intelligence: 88
+    physicalResistance: 91
+    magicalResistance: 100
+    constitution: 100
+- id: crab
+  name: Crab
+  number: 15
+  classification: Wavekin
+  satiety: 2
+  habitat: |
+    Western Thanalan
+  autoAttack:
+    element: Water
+    range: 5
+  trick:
+    name: Bubble Shower
+    element: Water
+    affinity: Durant
+    range: 5
+    radius: 6
+    description: |
+      Orders your familiar to use **Bubble Shower**, dealing water damage with a potency of 450 to all enemies in a cone before it.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Hundred Fists
+    description: |
+      Orders your familiar to use **Hundred Fists**, reducing its auto-attack delay by 75%.
+      **Duration:** 6s
+  stats:
+    strength: 94
+    intelligence: 94
+    physicalResistance: 94
+    magicalResistance: 94
+    constitution: 94
+- id: mantis
+  name: Mantis
+  number: 16
+  classification: Vilekin
+  satiety: 1
+  habitat: |
+    Western La Noscea
+  autoAttack:
+    element: Slashing
+    range: 5
+  trick:
+    name: Standing Chine
+    element: Slashing
+    affinity: Durant
+    range: 5
+    description: |
+      Orders your familiar to use **Standing Chine**, delivering a slashing physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Eerie Soundwave
+    element: Unaspected
+    radius: 8
+    description: |
+      Orders your familiar to use **Eerie Soundwave**, dealing unaspected damage with a potency of 450 to all nearby enemies.
+      **Additional Effect:** Increases targets' physical vulnerability by 10%
+      **Duration:** 30s
+  stats:
+    strength: 94
+    intelligence: 94
+    physicalResistance: 94
+    magicalResistance: 94
+    constitution: 94
+- id: slime
+  name: Slime
+  number: 17
+  classification: Ashkin
+  satiety: 5
+  habitat: |
+    Copperbell Mines
+  autoAttack:
+    element: Unaspected
+    range: 5
+  trick:
+    name: Digest
+    element: Unaspected
+    affinity: Eldritch
+    range: 25
+    description: |
+      Orders your familiar to use **Digest**, dealing unaspected damage with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Damage dealt is partially absorbed as beastmaster HP
+  temperedRelease:
+    name: Syrup
+    element: Unaspected
+    range: 25
+    radius: 4
+    description: |
+      Orders your familiar to use **Syrup**, dealing unaspected damage with a potency of 550 to target and all enemies nearby it.
+      **Additional Effect:** Afflicts targets with **Bind+** that cannot be nullified by suffering damage
+      **Duration:** 30s
+  stats:
+    strength: 97
+    intelligence: 1
+    physicalResistance: 97
+    magicalResistance: 97
+    constitution: 97
+- id: dullahan
+  name: Dullahan
+  number: 18
+  classification: Soulkin
+  satiety: 2
+  habitat: |
+    Halatali
+  autoAttack:
+    element: Slashing
+    range: 5
+  trick:
+    name: Iron Justice
+    element: Slashing
+    affinity: Durant
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Iron Justice**, delivering a slashing physical attack with a potency of 450 to all enemies in a cone before it.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+  temperedRelease:
+    name: King's Will
+    radius: 20
+    description: |
+      Orders your familiar to use **King's Will**, increasing nearby party members' physical damage dealt by 10%.
+      **Duration:** 30s
+  stats:
+    strength: 97
+    intelligence: 97
+    physicalResistance: 97
+    magicalResistance: 97
+    constitution: 97
+- id: bat
+  name: Bat
+  number: 19
+  classification: Cloudkin
+  satiety: 2
+  habitat: |
+    Lower La Noscea
+  autoAttack:
+    element: Unaspected
+    range: 5
+  trick:
+    name: Blood Drain
+    element: Unaspected
+    affinity: Volant
+    range: 25
+    description: |
+      Orders your familiar to use **Blood Drain**, dealing unaspected damage with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Damage dealt is partially absorbed as beastmaster HP
+  temperedRelease:
+    name: Ultrasonics
+    element: Unaspected
+    radius: 8
+    description: |
+      Orders your familiar to use **Ultrasonics**, dealing unaspected damage with a potency of 450 to all nearby enemies.
+      **Additional Effect:** Reduces targets' accuracy by 10%
+      **Duration:** 21s
+      **Additional Effect:** Removes a single detrimental effect from all nearby party members
+  stats:
+    strength: 94
+    intelligence: 94
+    physicalResistance: 94
+    magicalResistance: 94
+    constitution: 94
+- id: flying_trap
+  name: Flying Trap
+  number: 20
+  classification: Seedkin
+  satiety: 2
+  habitat: |
+    Central Shroud
+  autoAttack:
+    element: Ice
+    range: 25
+  trick:
+    name: Sour Sough
+    element: Wind
+    affinity: Volant
+    range: 11
+    radius: 12
+    description: |
+      Orders your familiar to use **Sour Sough**, dealing wind damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** 15-yalm knockback and **Poison**
+      **Potency:** 75
+      **Duration:** 30s
+  temperedRelease:
+    name: Necrotic Nectar
+    element: Unaspected
+    range: 25
+    radius: 5
+    description: |
+      Orders your familiar to use **Necrotic Nectar**, dealing unaspected damage with a potency of 550 to target and all enemies nearby it.
+      **Additional Effect:** Increases targets' magic vulnerability by 10%
+      **Duration:** 30s
+  stats:
+    strength: 100
+    intelligence: 97
+    physicalResistance: 97
+    magicalResistance: 97
+    constitution: 97
+- id: ziz
+  name: Ziz
+  number: 21
+  classification: Scalekin
+  satiety: 2
+  habitat: |
+    Western La Noscea
+  autoAttack:
+    element: Ice
+    range: 5
+  trick:
+    name: Ice Breath
+    element: Ice
+    affinity: Durant
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Ice Breath**, dealing ice damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Petribreath
+    element: Unaspected
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Petribreath**, dealing unaspected damage with a potency of 450 to all enemies in a cone before it.
+      **Additional Effect:** Afflicts targets with **Petrification**
+      **Duration:** 21s
+  stats:
+    strength: 97
+    intelligence: 94
+    physicalResistance: 97
+    magicalResistance: 97
+    constitution: 97
+- id: sabotender
+  name: Sabotender
+  number: 22
+  classification: Seedkin
+  satiety: 2
+  habitat: |
+    Western Thanalan
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Natural Needles
+    element: Piercing
+    affinity: Rampant
+    range: 11
+    radius: 12
+    description: |
+      Orders your familiar to use **Natural Needles**, delivering a piercing physical attack with a potency of 500 to all enemies in a straight line before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Hypodermic Hustle
+    radius: 20
+    description: |
+      Orders your familiar to use **Hypodermic Hustle**, granting **Keen Edge** to nearby party members, excluding familiars.
+      **Keen Edge Effect:** Increases damage dealt by 20% but inflicts damage over time
+      **Duration:** 21s
+  stats:
+    strength: 97
+    intelligence: 94
+    physicalResistance: 94
+    magicalResistance: 94
+    constitution: 94
+- id: golem
+  name: Golem
+  number: 23
+  classification: Soulkin
+  satiety: 2
+  habitat: |
+    Southern Thanalan
+  autoAttack:
+    element: Earth
+    range: 5
+  trick:
+    name: Boulder Clap
+    element: Earth
+    affinity: Eldritch
+    range: 11
+    radius: 12
+    description: |
+      Orders your familiar to use **Boulder Clap**, dealing earth damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Rockslide
+    element: Earth
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Rockslide**, dealing earth damage with a potency of 450 to all enemies in a straight line before it.
+      **Additional Effect:** Reduces targets' earth resistance by 20%
+      **Duration:** 60s
+  stats:
+    strength: 94
+    intelligence: 94
+    physicalResistance: 94
+    magicalResistance: 94
+    constitution: 94
+- id: apkallu
+  name: Apkallu
+  number: 24
+  classification: Cloudkin
+  satiety: 2
+  habitat: |
+    Eastern La Noscea
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Flying Sardine
+    element: Water
+    affinity: Durant
+    range: 25
+    description: |
+      Orders your familiar to use **Flying Sardine**, dealing water damage with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Regurgitate
+    element: Water
+    range: 25
+    description: |
+      Orders your familiar to use **Regurgitate**, dealing water damage with a potency of 750.
+      **Additional Effect:** Afflicts target with **Slow**
+      **Duration:** 45s
+  stats:
+    strength: 97
+    intelligence: 97
+    physicalResistance: 97
+    magicalResistance: 97
+    constitution: 85
+- id: adamantoise
+  name: Adamantoise
+  number: 25
+  classification: Scalekin
+  satiety: 2
+  habitat: |
+    Central Thanalan
+  autoAttack:
+    element: Lightning
+    range: 25
+  trick:
+    name: Bestial Thunder II
+    element: Lightning
+    affinity: Eldritch
+    range: 25
+    radius: 8
+    description: |
+      Orders your familiar to use **Bestial Thunder II**, dealing lightning damage with a potency of 450 to target and all enemies nearby it.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Harden Shell
+    radius: 20
+    description: |
+      Orders your familiar to use **Harden Shell**, reducing nearby party members' physical vulnerability by 20%.
+      **Duration:** 48s
+      **Additional Effect:** Increases petrification resistance of all nearby party members, and reduces the duration of petrification-related status afflictions by 80%
+      **Duration:** 30s
+  stats:
+    strength: 94
+    intelligence: 97
+    physicalResistance: 94
+    magicalResistance: 94
+    constitution: 94
+- id: buffalo
+  name: Buffalo
+  number: 26
+  classification: Beastkin
+  satiety: 3
+  habitat: |
+    Middle La Noscea
+  autoAttack:
+    element: Blunt
+    range: 5
+  trick:
+    name: Heave
+    element: Blunt
+    affinity: Rampant
+    range: 11
+    radius: 12
+    description: |
+      Orders your familiar to use **Heave**, delivering a blunt physical attack with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: War Cry
+    element: Unaspected
+    radius: 15
+    description: |
+      Orders your familiar to use **War Cry**, dealing unaspected damage with a potency of 750 to all nearby enemies.
+      **Additional Effect:** Afflicts targets with **Stun**
+      **Duration:** 15s
+  stats:
+    strength: 88
+    intelligence: 88
+    physicalResistance: 88
+    magicalResistance: 88
+    constitution: 88
+- id: uragnite
+  name: Uragnite
+  number: 27
+  classification: Wavekin
+  satiety: 2
+  habitat: |
+    Western Thanalan
+  autoAttack:
+    element: Ice
+    range: 5
+  trick:
+    name: Frost Breath
+    element: Ice
+    affinity: Durant
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Frost Breath**, dealing ice damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Gas Shell
+    element: Unaspected
+    range: 5
+    radius: 6
+    description: |
+      Orders your familiar to use **Gas Shell**, dealing unaspected damage with a potency of 300 to all enemies in a cone before it.
+      **Additional Effect:** Afflicts targets with **Poison**
+      **Potency:** 150
+      **Duration:** 30s
+  stats:
+    strength: 91
+    intelligence: 91
+    physicalResistance: 91
+    magicalResistance: 91
+    constitution: 91
+- id: worm
+  name: Worm
+  number: 28
+  classification: Vilekin
+  satiety: 2
+  habitat: |
+    Southern Thanalan
+  autoAttack:
+    element: Earth
+    range: 25
+  trick:
+    name: Sand Breath
+    element: Earth
+    affinity: Eldritch
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Sand Breath**, dealing earth damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Afflicts targets with **Blind**
+      **Duration:** 30s
+  temperedRelease:
+    name: Bottomless Desert
+    element: Earth
+    radius: 12
+    description: |
+      Orders your familiar to use **Bottomless Desert**, dealing earth damage with a potency of 800 to all nearby enemies.
+      **Additional Effect:** Afflicts targets with **Heavy**
+      **Duration:** 30s
+  stats:
+    strength: 91
+    intelligence: 91
+    physicalResistance: 91
+    magicalResistance: 91
+    constitution: 91
+- id: spriggan
+  name: Spriggan
+  number: 29
+  classification: Soulkin
+  satiety: 2
+  habitat: |
+    Central Thanalan
+  autoAttack:
+    element: Fire
+    range: 25
+  trick:
+    name: Romp
+    element: Fire
+    affinity: Rampant
+    range: 11
+    radius: 12
+    description: |
+      Orders your familiar to use **Romp**, dealing fire damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Frenetic Flurry
+    element: Blunt
+    range: 5
+    description: |
+      Orders your familiar to use **Frenetic Flurry**, delivering a sevenfold blunt physical attack with a potency of 125.
+  stats:
+    strength: 91
+    intelligence: 91
+    physicalResistance: 100
+    magicalResistance: 91
+    constitution: 91
+- id: goobbue
+  name: Goobbue
+  number: 30
+  classification: Beastkin
+  satiety: 3
+  habitat: |
+    Lower La Noscea
+  autoAttack:
+    element: Blunt
+    range: 5
+  trick:
+    name: Beatdown
+    element: Blunt
+    affinity: Rampant
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Beatdown**, delivering a blunt physical attack with a potency of 500 to all enemies in a straight line before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Moldy Sneeze
+    element: Unaspected
+    range: 5
+    radius: 6
+    description: |
+      Orders your familiar to use **Moldy Sneeze**, dealing unaspected damage with a potency of 450 to all enemies in a cone before it.
+      **Additional Effect:** Afflicts targets with **Disease**
+      **Disease Effect:** Reduces movement speed by 80% and HP recovered via healing magic by 95%
+      **Duration:** 30s
+  stats:
+    strength: 85
+    intelligence: 85
+    physicalResistance: 85
+    magicalResistance: 85
+    constitution: 85
+- id: gigantoad
+  name: Gigantoad
+  number: 31
+  classification: Wavekin
+  satiety: 2
+  habitat: |
+    Lower La Noscea
+  autoAttack:
+    element: Blunt
+    range: 5
+  trick:
+    name: Bestial Blizzard II
+    element: Ice
+    affinity: Eldritch
+    range: 25
+    radius: 8
+    description: |
+      Orders your familiar to use **Bestial Blizzard II**, dealing ice damage with a potency of 500 to target and all enemies nearby it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Sticky Tongue
+    element: Blunt
+    range: 20
+    description: |
+      Orders your familiar to use **Sticky Tongue**, delivering a ranged blunt physical attack with a potency of 750.
+      **Additional Effect:** Draws target to familiar
+      **Additional Effect:** Reduces target's accuracy by 10%
+      **Duration:** 21s
+  stats:
+    strength: 88
+    intelligence: 88
+    physicalResistance: 88
+    magicalResistance: 88
+    constitution: 88
+- id: colibri
+  name: Colibri
+  number: 32
+  classification: Cloudkin
+  satiety: 2
+  habitat: |
+    Eastern La Noscea
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Loop
+    element: Piercing
+    affinity: Volant
+    range: 5
+    description: |
+      Orders your familiar to use **Loop**, delivering a piercing physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Pecking Flurry
+    element: Piercing
+    range: 5
+    description: |
+      Orders your familiar to use **Pecking Flurry**, delivering a fivefold piercing physical attack with a potency of 200.
+  stats:
+    strength: 88
+    intelligence: 88
+    physicalResistance: 88
+    magicalResistance: 88
+    constitution: 88
+- id: coeurl
+  name: Coeurl
+  number: 33
+  classification: Beastkin
+  satiety: 3
+  habitat: |
+    Outer La Noscea
+  autoAttack:
+    element: Lightning
+    range: 5
+  trick:
+    name: Blaster
+    element: Lightning
+    affinity: Eldritch
+    range: 25
+    description: |
+      Orders your familiar to use **Blaster**, dealing lightning damage with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Charged Whisker
+    element: Lightning
+    radius: 7
+    description: |
+      Orders your familiar to use **Charged Whisker**, dealing lightning damage with a potency of 450 to all nearby enemies.
+      **Additional Effect:** Afflicts targets with **Paralysis**
+      **Duration:** 30s
+      **Additional Effect:** Reduces targets' lightning resistance by 20%
+      **Duration:** 60s
+  stats:
+    strength: 94
+    intelligence: 94
+    physicalResistance: 94
+    magicalResistance: 94
+    constitution: 79
+- id: raptor
+  name: Raptor
+  number: 34
+  classification: Scalekin
+  satiety: 2
+  habitat: |
+    Central Shroud
+  autoAttack:
+    element: Ice
+    range: 5
+  trick:
+    name: Frost Breath
+    element: Ice
+    affinity: Durant
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Frost Breath**, dealing ice damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Foul Breath
+    element: Fire
+    range: 11
+    radius: 12
+    description: |
+      Orders your familiar to use **Foul Breath**, dealing fire damage with a potency of 1,000 to all enemies in a cone before it.
+      **Additional Effect:** Reduces targets' fire resistance by 20%
+      **Duration:** 60s
+  stats:
+    strength: 91
+    intelligence: 91
+    physicalResistance: 100
+    magicalResistance: 91
+    constitution: 91
+- id: drake
+  name: Drake
+  number: 35
+  classification: Scalekin
+  satiety: 2
+  habitat: |
+    Southern Thanalan
+  autoAttack:
+    element: Fire
+    range: 25
+  trick:
+    name: Burning Cyclone
+    element: Fire
+    affinity: Rampant
+    range: 5
+    radius: 6
+    description: |
+      Orders your familiar to use **Burning Cyclone**, dealing fire damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Smoldering Scales
+    radius: 20
+    description: |
+      Orders your familiar to use **Smoldering Scales**, reducing nearby party members' magic vulnerability by 20% and fire damage taken by 15%, occasionally nullifying it entirely.
+      **Duration:** 48s
+  stats:
+    strength: 88
+    intelligence: 100
+    physicalResistance: 88
+    magicalResistance: 88
+    constitution: 88
+- id: treant
+  name: Treant
+  number: 36
+  classification: Seedkin
+  satiety: 2
+  habitat: |
+    Central Shroud
+  autoAttack:
+    element: Earth
+    range: 5
+  trick:
+    name: Acorn Bomb
+    element: Earth
+    affinity: Eldritch
+    range: 25
+    radius: 6
+    description: |
+      Orders your familiar to use **Acorn Bomb**, dealing earth damage with a potency of 500 to target and all enemies nearby it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Afflicts targets with **Nightmare**
+      **Duration:** 30s
+  temperedRelease:
+    name: Arboreal Storm
+    element: Wind
+    radius: 10
+    description: |
+      Orders your familiar to use **Arboreal Storm**, dealing wind damage with a potency of 450 to all nearby enemies.
+      **Additional Effect:** 15-yalm knockback
+  stats:
+    strength: 94
+    intelligence: 100
+    physicalResistance: 91
+    magicalResistance: 91
+    constitution: 91
+- id: antling
+  name: Antling
+  number: 37
+  classification: Vilekin
+  satiety: 1
+  habitat: |
+    Cutter's Cry
+  autoAttack:
+    element: Slashing
+    range: 5
+  trick:
+    name: Mandible Bite
+    element: Piercing
+    affinity: Rampant
+    range: 5
+    description: |
+      Orders your familiar to use **Mandible Bite**, delivering a piercing physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Formic Pheromones
+    radius: 7
+    description: |
+      Orders your familiar to use **Formic Pheromones**, afflicting all nearby enemies with **Slow**.
+      **Duration:** 30s
+      **Additional Effect:** Reduces water, earth, and ice damage taken by 15% for nearby party members, and occasionally nullifies it entirely
+      **Duration:** 60s
+  stats:
+    strength: 88
+    intelligence: 88
+    physicalResistance: 88
+    magicalResistance: 88
+    constitution: 88
+- id: chimera
+  name: Chimera
+  number: 38
+  classification: Beastkin
+  satiety: 3
+  habitat: |
+    Cutter's Cry
+  autoAttack:
+    element: Slashing
+    range: 5
+  trick:
+    name: the Lion's Breath
+    element: Fire
+    affinity: Rampant
+    range: 8
+    radius: 9
+    description: |
+      Orders your familiar to use **The Lion's Breath**, dealing fire damage with a potency of 450 to all enemies in a cone before it.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+      **Additional Effect:** Deals additional damage with a potency of 1,000 to targets suffering from **Deep Freeze**
+  temperedRelease:
+    name: the Ram's Voice
+    element: Ice
+    radius: 9
+    description: |
+      Orders your familiar to use **The Ram's Voice**, dealing ice damage with a potency of 450 to all nearby enemies.
+      **Additional Effect:** Afflicts targets with **Deep Freeze**
+      **Duration:** 20s
+      **Additional Effect:** Reduces targets' ice resistance by 20%
+      **Duration:** 60s
+  stats:
+    strength: 79
+    intelligence: 79
+    physicalResistance: 79
+    magicalResistance: 100
+    constitution: 94
+- id: morbol
+  name: Morbol
+  number: 39
+  classification: Seedkin
+  satiety: 2
+  habitat: |
+    Central Shroud
+  autoAttack:
+    element: Blunt
+    range: 5
+  trick:
+    name: Vine Probe
+    element: Piercing
+    affinity: Rampant
+    range: 6
+    radius: 7
+    description: |
+      Orders your familiar to use **Vine Probe**, delivering a piercing physical attack with a potency of 450 to all enemies in a straight line before it.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Bad Breath
+    element: Unaspected
+    range: 11
+    radius: 12
+    description: |
+      Orders your familiar to use **Bad Breath**, dealing unaspected damage with a potency of 450 to all enemies in a cone before it.
+      **Additional Effect:** Afflicts targets with **Slow**, **Blind**, and **Paralysis**
+      **Duration:** 30s
+  stats:
+    strength: 88
+    intelligence: 88
+    physicalResistance: 88
+    magicalResistance: 88
+    constitution: 88
+- id: ghost
+  name: Ghost
+  number: 40
+  classification: Ashkin
+  satiety: 5
+  habitat: |
+    Middle La Noscea
+  autoAttack:
+    element: Wind
+    range: 25
+  trick:
+    name: Fell Gale
+    element: Wind
+    affinity: Volant
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Fell Gale**, dealing wind damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Small chance to afflict targets with **Doom**
+      **Doom Effect:** Incapacitates target when the effect expires. Has no effect on enemies whose level is higher than your own.
+      **Duration:** 5s
+  temperedRelease:
+    name: Curse
+    element: Unaspected
+    radius: 8
+    description: |
+      Orders your familiar to use **Curse**, dealing unaspected damage with a potency of 300 to all nearby enemies.
+      **Additional Effect:** Deals additional damage with a potency of 1,500 to targets suffering from **Disease**
+      **Additional Effect:** Small chance to afflict targets with **Doom**
+      **Doom Effect:** Incapacitates target when the effect expires. Has no effect on enemies whose level is higher than your own.
+      **Duration:** 5s
+  stats:
+    strength: 94
+    intelligence: 94
+    physicalResistance: 94
+    magicalResistance: 94
+    constitution: 94
+- id: salamander
+  name: Salamander
+  number: 41
+  classification: Wavekin
+  satiety: 2
+  habitat: |
+    Central Shroud
+  autoAttack:
+    element: Water
+    range: 5
+  trick:
+    name: Brackish Rain
+    element: Water
+    affinity: Durant
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Brackish Rain**, dealing water damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Peculiar Light
+    element: Unaspected
+    radius: 8
+    description: |
+      Orders your familiar to use **Peculiar Light**, dealing unaspected damage with a potency of 450 to all nearby enemies.
+      **Additional Effect:** Increases targets' magic vulnerability by 10%
+      **Duration:** 30s
+  stats:
+    strength: 85
+    intelligence: 85
+    physicalResistance: 85
+    magicalResistance: 85
+    constitution: 85
+- id: cobra
+  name: Cobra
+  number: 42
+  classification: Scalekin
+  satiety: 2
+  habitat: |
+    Mor Dhona
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Dripping Fang
+    element: Piercing
+    affinity: Durant
+    range: 5
+    description: |
+      Orders your familiar to use **Dripping Fang**, delivering a piercing physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+      **Additional Effect:** Afflicts target with **Poison**
+      **Potency:** 75
+      **Duration:** 30s
+  temperedRelease:
+    name: Stone Gaze
+    element: Unaspected
+    range: 15
+    description: |
+      Orders your familiar to use **Stone Gaze**, dealing unaspected damage with a potency of 750.
+      **Additional Effect:** Afflicts target with **Petrification**
+      **Duration:** 42s
+  stats:
+    strength: 85
+    intelligence: 85
+    physicalResistance: 85
+    magicalResistance: 85
+    constitution: 85
+- id: hydra
+  name: Hydra
+  number: 43
+  classification: Scalekin
+  satiety: 3
+  habitat: |
+    A Relic Reborn: the Hydra
+  autoAttack:
+    element: Slashing
+    range: 5
+  trick:
+    name: Main Trap
+    element: Piercing
+    affinity: Durant
+    range: 5
+    description: |
+      Orders your familiar to use **Main Trap**, delivering a piercing physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: White Breath
+    element: Unaspected
+    range: 14
+    radius: 15
+    description: |
+      Orders your familiar to use **White Breath**, dealing unaspected damage with a potency of 450 to all enemies in a cone before it.
+      **Additional Effect:** Afflicts targets with **Disease**
+      **Disease Effect:** Reduces movement speed by 80% and HP recovered via healing magic by 95%
+      **Duration:** 30s
+  stats:
+    strength: 82
+    intelligence: 82
+    physicalResistance: 82
+    magicalResistance: 82
+    constitution: 82
+- id: damselfly
+  name: Damselfly
+  number: 44
+  classification: Vilekin
+  satiety: 1
+  habitat: |
+    The Lost City of Amdapor
+  autoAttack:
+    element: Wind
+    range: 25
+  trick:
+    name: Cursed Sphere
+    element: Wind
+    affinity: Volant
+    range: 25
+    radius: 3
+    description: |
+      Orders your familiar to use **Cursed Sphere**, dealing wind damage with a potency of 450 to target and all enemies nearby it.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Venom
+    element: Unaspected
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Venom**, dealing unaspected damage with a potency of 300 to all enemies in a cone before it.
+      **Additional Effect:** Afflicts targets with **Poison**
+      **Potency:** 150
+      **Duration:** 30s
+  stats:
+    strength: 85
+    intelligence: 85
+    physicalResistance: 85
+    magicalResistance: 85
+    constitution: 85
+- id: rotting_goobbue
+  name: Rotting Goobbue
+  number: 45
+  classification: Ashkin
+  satiety: 5
+  habitat: |
+    The Lost City of Amdapor
+  autoAttack:
+    element: Earth
+    range: 25
+  trick:
+    name: Dirty Sneeze
+    element: Earth
+    affinity: Eldritch
+    range: 25
+    description: |
+      Orders your familiar to use **Dirty Sneeze**, dealing ranged earth damage with a potency of 450.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Inhale
+    element: Unaspected
+    range: 19
+    radius: 20
+    description: |
+      Orders your familiar to use **Inhale**, dealing unaspected damage with a potency of 450 to all enemies in a cone before it.
+      **Additional Effect:** Draws targets to familiar
+  stats:
+    strength: 91
+    intelligence: 97
+    physicalResistance: 91
+    magicalResistance: 91
+    constitution: 91
+- id: zu
+  name: Zu
+  number: 46
+  classification: Cloudkin
+  satiety: 3
+  habitat: |
+    Pharos Sirius
+  autoAttack:
+    element: Slashing
+    range: 25
+  trick:
+    name: Flying Frenzy
+    element: Blunt
+    affinity: Volant
+    range: 25
+    radius: 8
+    description: |
+      Orders your familiar to use **Flying Frenzy**, rushing target and delivering a blunt physical attack with a potency of 450 to target and all enemies nearby it.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Breath Wing
+    element: Wind
+    radius: 12
+    description: |
+      Orders your familiar to use **Breath Wing**, dealing wind damage with a potency of 800 to all nearby enemies.
+      **Additional Effect:** Reduces targets' wind resistance by 20%
+      **Duration:** 60s
+  stats:
+    strength: 85
+    intelligence: 85
+    physicalResistance: 85
+    magicalResistance: 85
+    constitution: 97
+- id: ice_golem
+  name: Ice Golem
+  number: 47
+  classification: Soulkin
+  satiety: 3
+  habitat: |
+    Snowcloak
+  autoAttack:
+    element: Ice
+    range: 25
+  trick:
+    name: Ice Guillotine
+    element: Ice
+    affinity: Durant
+    range: 7
+    radius: 8
+    description: |
+      Orders your familiar to use **Ice Guillotine**, dealing ice damage with a potency of 450 to all enemies in a cone before it.
+      Potency increases up to 1,500 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Frozen Heart
+    radius: 20
+    description: |
+      Orders your familiar to use **Frozen Heart**, increasing nearby party members' magic damage dealt by 25%.
+      **Duration:** 15s
+  stats:
+    strength: 88
+    intelligence: 88
+    physicalResistance: 88
+    magicalResistance: 88
+    constitution: 88
+- id: karlabos
+  name: Karlabos
+  number: 48
+  classification: Wavekin
+  satiety: 3
+  habitat: |
+    Sastasha (Hard)
+  autoAttack:
+    element: Water
+    range: 25
+  trick:
+    name: Impale
+    element: Piercing
+    affinity: Durant
+    range: 5
+    description: |
+      Orders your familiar to use **Impale**, delivering a piercing physical attack with a potency of 500.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Tail Screw
+    element: Water
+    range: 25
+    radius: 12
+    description: |
+      Orders your familiar to use **Tail Screw**, dealing water damage with a potency of 800 to target and all enemies nearby it.
+      **Additional Effect:** Small chance to reduce enemy HP to a single digit. Has no effect on enemies whose level is higher than your own.
+  stats:
+    strength: 82
+    intelligence: 82
+    physicalResistance: 82
+    magicalResistance: 82
+    constitution: 82
+- id: rafflesia
+  name: Rafflesia
+  number: 49
+  classification: Seedkin
+  satiety: 3
+  habitat: |
+    The Second Coil of Bahamut - Turn 1
+  autoAttack:
+    element: Piercing
+    range: 5
+  trick:
+    name: Bloody Caress
+    element: Wind
+    affinity: Eldritch
+    range: 25
+    radius: 8
+    description: |
+      Orders your familiar to use **Bloody Caress**, dealing wind damage with a potency of 500 to target and all enemies nearby it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Blighted Bouquet
+    element: Unaspected
+    radius: 12
+    description: |
+      Orders your familiar to use **Blighted Bouquet**, dealing unaspected damage with a potency of 800 to all nearby enemies.
+      **Additional Effect:** Small chance to afflict targets with **Doom**
+      **Doom Effect:** Incapacitates target when the effect expires. Has no effect on enemies whose level is higher than your own.
+      **Duration:** 5s
+  stats:
+    strength: 85
+    intelligence: 85
+    physicalResistance: 85
+    magicalResistance: 85
+    constitution: 85
+- id: behemoth
+  name: Behemoth
+  number: 50
+  classification: Beastkin
+  satiety: 4
+  habitat: |
+    The Labyrinth of the Ancients
+  autoAttack:
+    element: Lightning
+    range: 5
+  trick:
+    name: Thunderbolt
+    element: Lightning
+    affinity: Eldritch
+    range: 11
+    radius: 12
+    description: |
+      Orders your familiar to use **Thunderbolt**, dealing lightning damage with a potency of 500 to all enemies in a cone before it.
+      Potency increases up to 1,250 as Familiar TP nears maximum.
+  temperedRelease:
+    name: Meteor
+    element: Fire
+    range: 25
+    radius: 18
+    description: |
+      Orders your familiar to use **Meteor**, dealing fire damage with a potency of 1,000 to target and all enemies nearby it.
+  stats:
+    strength: 76
+    intelligence: 76
+    physicalResistance: 76
+    magicalResistance: 76
+    constitution: 97

@@ -1,5 +1,5 @@
 {
-  "name": "blue-mage-data",
+  "name": "limited-job-data",
   "version": "1.0.0",
-  "description": "Canonical Blue Mage spell data for Blue Academy and Strago."
+  "description": "Canonical data for FFXIV's limited jobs (Blue Mage and Beastmaster), for Blue Academy and Strago."
 }

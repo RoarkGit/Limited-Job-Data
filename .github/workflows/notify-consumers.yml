@@ -14,11 +14,11 @@ jobs:
             -H "Authorization: token ${{ secrets.CONSUMER_REPOS_PAT }}" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/RoarkGit/Strago/dispatches \
-            -d '{"event_type":"blue-mage-data-updated"}'
+            -d '{"event_type":"limited-job-data-updated"}'
       - name: Trigger Blue-Academy submodule update
         run: |
           curl -X POST \
             -H "Authorization: token ${{ secrets.CONSUMER_REPOS_PAT }}" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/RoarkGit/Blue-Academy/dispatches \
-            -d '{"event_type":"blue-mage-data-updated"}'
+            -d '{"event_type":"limited-job-data-updated"}'
