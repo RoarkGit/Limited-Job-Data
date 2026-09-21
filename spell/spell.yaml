@@ -32,6 +32,8 @@
     Learned First
   description: |
     Deals water damage with a potency of 200.
+  lore: |
+    This spell, easily mastered via defeat of a kraken, fires a concentrated burst of water at one's opponent. As the liquid itself is conjured by manipulating aether to condense moisture in the air, the technique remains effective regardless of whether or not its caster has access to a body of water.
   target:
     - enemy
 - id: flame_thrower
@@ -54,6 +56,8 @@
     Omega / Alphascape V3.0
   description: |
     Deals fire damage to all enemies in a cone before you with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
+  lore: |
+    As with thaumaturgical fire spells, the jet of flame produced by this technique manifests from a burst of fire-aspected aether. Certain weapons produce similar effects; however, this is not through aetherial manipulation, but rather the copious use of highly flammable liquid.
   target:
     - enemy
 - id: aqua_breath
@@ -82,6 +86,8 @@
     {{< green "Potency: " >}}20
 
     {{< green "Duration: " >}}12s
+  lore: |
+    The most quintessential of water-aspected blue magicks. A competent mage will not only use its bubbles to smother nearby enemies, but also incorporate poisons, sealing the fates of any survivors.
   target:
     - enemy
 - id: flying_frenzy
@@ -102,6 +108,8 @@
     Delivers a jumping physical attack to target and all enemies nearby it with a potency of 150 for the first enemy, and 50% less for all remaining enemies.
 
     Cannot be executed while bound.
+  lore: |
+    Replicating this technique requires magically altering one's own state of mind to mimic that of a zu. The flying strike that results surpasses normal physical limitations, but requires dispensing with caution in favor of an all-consuming rage─the sensible mage will shield herself with aether first.
   target:
     - enemy
 - id: drill_cannons
@@ -122,6 +130,8 @@
     Deals physical damage to all enemies in a straight line before you with a potency of 200 for the first enemy, and 50% less for all remaining enemies.
 
     {{< green "Additional Effect: " >}}Potency is increased to 600 when target is afflicted with {{< yellow "Petrification" >}}. The {{< yellow "Petrification" >}} effect is also removed.
+  lore: |
+    This technique mimics the Drill Cannons of machina by winding aetherial currents until they resemble rapidly spinning projectiles. Like the physical drills upon which they are patterned, these projectiles excel at penetrating stone.
   target:
     - enemy
 - id: high_voltage
@@ -149,6 +159,8 @@
     {{< green "Additional Effect: " >}}Potency increased to 220 when target is afflicted with {{< yellow "Dropsy" >}}
 
     {{< green "Additional Effect: " >}}Duration of {{< yellow "Paralysis" >}} is increased to 30 seconds when target is afflicted with {{< yellow "Dropsy" >}}
+  lore: |
+    An industrial form of machina-based aetherial manipulation developed and adapted by the Allagan Empire. Through the compression of ambient lightning-aspected aether, the caster (or casting machina) floods the vicinity with highly charged arcs of electricity.
   target:
     - enemy
   status:
@@ -174,6 +186,8 @@
     Move quickly to the specified location.
 
     Cannot be executed while bound.
+  lore: |
+    To utilize this simple teleportation spell, casters must create an aetherial current upon which to travel between their location and the desired position. Though this is only effective over short distances, it is nevertheless an invaluable tool in the event that one needs to beat a hasty retreat.
   notes: |
     Loom is easiest to learn from Flame Sergeant Dalvag.
 
@@ -200,6 +214,8 @@
     Effect will not be removed upon revival or further incapacitation.
 
     Cannot be executed while under the effect of {{< yellow "Brush with Death" >}}.
+  lore: |
+    A desperate mage's last resort, this technique converts all of the user's life force to an aetherial poison that is then injected into a single adversary. Suffice it to say that, as with the physical sting of the wespe, it should not be relied upon in but the most dire of circumstances.
   target:
     - enemy
     - ally
@@ -224,6 +240,8 @@
     {{< green "Potency: " >}}50
 
     {{< green "Duration: " >}}30s
+  lore: |
+    Favored by sirens, the Song of Torment carries in its melody a malicious enchantment. It ensnares the listener's spirit, inducing phantom pain that soon becomes physical as the body struggles to process the mind's trauma.
   target:
     - enemy
 - id: glower
@@ -247,6 +265,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Paralysis" >}}
 
     {{< green "Duration: " >}}6s
+  lore: |
+    Perhaps best known as the unsettling hallmark of the cyclops, Glower involves funneling aether through the eyes as if they were arcane circles─much like its sister spell, The Look. Its highly concentrated aether strikes foes like a levinbolt, leaving their skin singed and muscles seizing.
   notes: |
     Guaranteed learn even when running unsynced.
   target:
@@ -272,6 +292,8 @@
     Azulmagia / The Masked Carnivale #25
   description: |
     Deals earth damage to all nearby enemies with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
+  lore: |
+    Just like that all-too-well-known fixture in the arsenals of many earthy soulkin, this technique creates a localized quake around the caster. According to legend, the earth itself will appear to shatter under a true master of the spell.
   target:
     - enemy
 - id: bristle
@@ -292,6 +314,8 @@
     {{< green "Duration: " >}}30s
 
     Effect cannot be stacked with {{< yellow "Harmonized" >}}.
+  lore: |
+    Instinctive to beastkin, Bristle channels sheer animalistic rage into heightened spiritual and physical power. The blue mage will find that she can adapt this technique to increase her spells' potency.
   notes: |
     Buffs *spells*, not *abilities*. Spells are *usually* tied to the GCD, while abilities are not (usually Primal spells).
   target:
@@ -311,6 +335,8 @@
     Learn 10 Spells - Whalaqee Totem
   description: |
     Restores own HP and the HP of all nearby party members by an amount equal to your current HP.
+  lore: |
+    White Wind imbues a localized current of air with purified aether, distributing its curative effects throughout the vicinity. Though powerful for such a simple spell, the purification of sufficient aether requires significant magical exertion on the part of the caster, and thus should be used sparingly.
   target:
     - ally
 - id: level_5_petrify
@@ -335,6 +361,8 @@
     Chance of successful attack is low.
 
     Enemy level must be a multiple of 5. Has no effect on enemies whose level is higher than your own.
+  lore: |
+    This curse, commonly used by ahrimans and similar voidsent, takes advantage of the hubris that living creatures tend to fall prey to upon reaching certain malmstones in development, targeting mental weaknesses to give foes a paralyzing reminder of their own fallibility.
   target:
     - enemy
   status:
@@ -356,6 +384,8 @@
     Deals physical damage with a potency of 220.
 
     {{< green "Additional Effect: " >}}Potency is increased to 450 when target is stunned
+  lore: |
+    At this point, tonberries' predilection for sharpened knives is well known. By manipulating aether to harness feelings of resentment, one hones a keener blade for driving into the heart of the enemy. Naturally, being beset by this attack while unable to move is a uniquely harrowing experience.
   target:
     - enemy
 - id: ice_spikes
@@ -382,6 +412,8 @@
     {{< green "Additional Effect: " >}}50% chance that when you are struck, the striker will be afflicted with {{< yellow "Slow" >}} +20%
 
     {{< green "Duration: " >}}15s
+  lore: |
+    Favored by certain types of voidsent, this spell─technically a curse, cast upon oneself─converts the malice of attackers into aetherial spikes of ice, impaling them each time they strike. The more furious their flurries, the more pain they cause themselves─poetic justice, one might say.
   target:
     - ally
   status:
@@ -403,6 +435,8 @@
     Deals unaspected damage with a potency of 50.
 
     {{< green "Additional Effect: " >}}Restores MP
+  lore: |
+    Through the draining of blood, this spell saps a foe's aether, a portion of which is then absorbed by the caster. In nature, such habits first appeared in creatures such as bats and chigoes, who naturalists theorize developed the ability to absorb nutrients via blood over the course of centuries.
   target:
     - enemy
     - ally
@@ -426,6 +460,8 @@
     {{< green "Duration: " >}}30s
 
     Cancels auto-attack upon execution.
+  lore: |
+    This technique pelts foes with seedlike aetherial orbs, which then explode to release the soporific within. Scholars believe that similar defense mechanisms were originally developed by treants and other species vulnerable to vilekin in order to prevent their boring of holes and leeching of sap.
   notes: |
     Largely irrelevant due to the Sleep role action.
   target:
@@ -454,6 +490,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Stun" >}}
 
     {{< green "Duration: " >}}3s
+  lore: |
+    This spell creates an aetherial replica of the sort of bomb preferred by goblins. Of course, goblin bombs acquire their combustive force through the use of magically enhanced gunpowder, so mimicking this effect with aether alone requires no small amount of effort, but the results are...explosive.
   target:
     - enemy
   status:
@@ -477,6 +515,8 @@
     {{< green "Duration: " >}}15s
 
     Recast timer cannot be affected by other spells. However, this action shares a recast timer with {{< orange "Peculiar Light" >}}.
+  lore: |
+    A primitive type of curse cast by giants in the New World, this spell sunders opponents' defenses by breaking their spirits. Pairing it with strong offensive magic allows the blue mage to weaken and strike down foe after foe without cease.
   notes: |
     Stacks with Peculiar Light.
   target:
@@ -505,6 +545,8 @@
     Effect will not be removed upon revival or further incapacitation.
 
     Cannot be executed while under the effect of {{< yellow "Brush with Death" >}}.
+  lore: |
+    Credited as the source of the “bomb” voidsent family's name, Self-destruct, when used by blue mages, converts the entirety of its caster's energy into fire-aspected aether to cause an explosion. The application of oil has been observed to make it more effective─though likely also more painful.
   target:
     - enemy
 - id: transfusion
@@ -529,6 +571,8 @@
     Effect will not be removed upon revival or further incapacitation.
 
     Cannot be executed while under the effect of {{< yellow "Brush with Death" >}}.
+  lore: |
+    At times used by self-sacrificing spirits of the dead roaming the New World, this technique consumes the entirety of one's being to fully restore both the body and mind of another. Though the sacrifice required is great, the use of this spell is a deed not soon forgotten.
   target:
     - ally
 - id: faze
@@ -548,6 +592,8 @@
     Stuns all enemies in a cone before you.
 
     {{< green "Duration: " >}}6s
+  lore: |
+    Originally developed as a means of defense from flesh-eating beasts, this favorite of the Qiqirn tribes produces a shockwave as its user strikes together palms filled with concentrated aether, leaving foes witless.
   target:
     - enemy
   status:
@@ -570,6 +616,8 @@
     Deals physical damage with a potency of 10.
 
     {{< green "Additional Effect: " >}}Interrupts target
+  lore: |
+    The apkallu, in the wild, violently regurgitates its latest pescatarian meal at predators as a defense mechanism. In blue magic trials, Flying Sardine has proven to be an equally effective deterrent even when the sardine in question is not entirely physical, reliably shocking adversaries into silence.
   target:
     - enemy
   status:
@@ -592,6 +640,8 @@
     Typhon / The Masked Carnivale #20 & #27
   description: |
     Deals a 20-yalm knockback to all enemies in a cone before you.
+  lore: |
+    Typhon's signature technique produces gale-force winds by propelling concentrated air through the nostrils─though mages recreate the gust externally, for the sake of nasal integrity. In addition to buffeting foes backward, it appears to have a detrimental effect on its target's mental state.
   notes: |
     Only the ability actually called *Snort* will teach the spell; it is cast quite late into The Dragon's Neck.
   target:
@@ -616,6 +666,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Heavy" >}} +40%
 
     {{< green "Duration: " >}}30s
+  lore: |
+    Employed to great effect by Ultros, this technique crushes adversaries beneath a phantom weight. Due to reticence in the scholastic community regarding certain forms of testing, whether the weight applied feels like that of four full tonzes is a question that remains unanswered.
   target:
     - enemy
   status:
@@ -640,6 +692,8 @@
     Deals unaspected damage to all enemies in a cone before you with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
 
     {{< green "Additional Effect: " >}}Increased enmity
+  lore: |
+    Common amongst dahaks, this technique requires using the position of one's own eyes to anchor arcane geometries in which to concentrate aether. The user then expels the aether, propelled by ill will, in the direction of his gaze─though this tends to earn him a fair bit of ire in return.
   notes: |
     Largely irrelevant due to Mighty Guard threat modifier.
   target:
@@ -672,6 +726,8 @@
     {{< green "Duration: " >}}15s
 
     {{< green "Additional Effect: " >}}Interrupts target
+  lore: |
+    This spell manipulates wind- and earth-aspected aether to call forth the umbral, imbuing exhaled air with miasma. Attempts to replicate the morbol's Bad Breath sans its inherent horrific stench have been unsuccessful, thus it retains its title as the *foulest* of blue magicks.
   target:
     - enemy
   status:
@@ -702,6 +758,8 @@
     If used when {{< yellow "Waxing Nocturne" >}} is active, its effect will transition immediately to {{< yellow "Waning Nocturne" >}}.
 
     The effect of this action cannot be ended manually.
+  lore: |
+    Diamondback weaves earth-aspected aether into a hard mineral shield, mimicking what many describe as the “maddening” effect of shelled dragons' carapaces. Alas, though its defensive properties are superlative, its weight makes it impossible for the caster to move while under its aegis.
   target:
     - ally
 - id: mighty_guard
@@ -720,6 +778,8 @@
     Reduces damage taken by 40% while reducing damage dealt by 40%, increasing enmity generation, and preventing casting interruptions via damage taken.
 
     Effect ends upon reuse.
+  lore: |
+    Protected by only a dainty layer of scales, some Indigo Deep-dwellers' survival has come to depend on aetherial manipulation─this technique included. By reducing the amount of aether used for offense, more becomes available for the creation of a strong─if flashy─barrier.
   target:
     - ally
 - id: sticky_tongue
@@ -746,6 +806,8 @@
     {{< green "Duration:" >}} 4s
 
     {{< green "Additional Effect:" >}} Increased enmity
+  lore: |
+    In nature, Sticky Tongue is employed by gigantoads, who extend said lengthy and unusually adhesive appendages to capture distant prey. The blue magic rendition utilizes a far more sanitary aetherial “tongue,” but the principle is the same.
   target:
     - enemy
   status:
@@ -766,6 +828,8 @@
     Increases evasion by 20%.
 
     {{< green "Duration: " >}}180s
+  lore: |
+    This technique covers the blue mage's body in oil, much like a gigantoad's slime would its own, allowing the caster to slip and slide away from foes' attacks. Though most consider it uncouth at best, make no mistake─its devotees are few, but ardent.
   notes: |
     Primarily used for buffing {{< spell self-destruct >}}. Has _some_ use for
     dungeon tanking and soloing.
@@ -794,6 +858,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Deep Freeze" >}}
 
     {{< green "Duration: " >}}12s
+  lore: |
+    Scholars theorize that this particular spell was born of the variety of aetherial manipulation often performed by northern rams to survive the harsh climes of high elevations─but when ram became chimerical head, it began to favor offense over defense.
   target:
     - enemy
   status:
@@ -825,6 +891,8 @@
     {{< green "Duration: " >}}9s
 
     {{< green "Additional Effect: " >}}Potency is increased to 400 against most enemies afflicted with {{< yellow "Deep Freeze" >}}. The {{< yellow "Deep Freeze" >}} effect is also removed.
+  lore: |
+    The blue mage's ability to precisely direct volatile levin to form the smooth ring produced by this spell is owed to the chimera from which the technique was learned─and whose control of lightning aether was, in turn, owed to its draconic head.
   target:
     - enemy
   status:
@@ -848,6 +916,8 @@
     Deals damage equal to 50% of target's current HP.
 
     Chance of successful attack is low. Has no effect on enemies whose level is higher than your own.
+  lore: |
+    A magical imitation of warmachina technology, this technique allows the user to fire a barrage of aetherial missiles. When efficacious─which, bear in mind, is not guaranteed─it sends a shock through the foe that appears to resonate more the greater their vitality.
   notes: |
     Has approximately 67% accuracy.
 
@@ -871,6 +941,8 @@
     Sabotender Bailaor / Southern Thanalan (16, 15)
   description: |
     Deals a fixed 1,000 points of physical damage which is shared by all enemies around you.
+  lore: |
+    Highly famed─and feared─due to its frequent use by cactuars, 1000 Needles showers one's surroundings with a hail of slim projectiles. Despite their magical nature, the velocity at which the blue mage's pseudo-spines are propelled ensures that they are quite as painful as the real thing.
   notes: |
     Always deals exactly 1,000 damage unless the enemy is invulnerable.
   target:
@@ -895,6 +967,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Blind" >}}
 
     {{< green "Duration: " >}}30s
+  lore: |
+    Ink Jet can be considered a more advanced form of Water Cannon─fitting, as both come courtesy of the kraken. The spell infuses aetherially concentrated water with whatever impure substances are most readily available to create and expel a synthetic “ink,” blinding opponents.
   target:
     - enemy
   status:
@@ -915,6 +989,8 @@
     Fruminoius Koheel Ja / The Wanderer's Palace (Hard)
   description: |
     Deals physical fire damage to target and all enemies nearby it with a potency of 200 for the first enemy, and 50% less for all remaining enemies.
+  lore: |
+    In imitation of a martial technique passed down for generations by Mamool Ja tribes in the New World, this spell imbues a long-headed spear called an “angon”─or rather, an aetherial replica of the same─with fire-aspected aether and propels it across the field at enemy combatants.
   target:
     - enemy
 - id: moon_flute
@@ -937,6 +1013,8 @@
     When effect ends, the player is afflicted with {{< yellow "Waning Nocturne" >}}, preventing the use of auto-attack, weaponskills, spells, or abilities.
 
     {{< green "Duration: " >}}15s
+  lore: |
+    This technique imitates a peculiar flute wrested from the grasp of a vanquished voidsent. Said creature was initially welcomed as a god by those New World peoples who worship the moon, but it soon became clear to them that the flute was the true source of its power and cruel authority.
   notes: |
     Yes, it is worth using even with the Waning Nocturne debuff. The damage we gain during Moon Flute outweighs the handful of Sonic Booms we would miss during Waning Nocturne.
   target:
@@ -962,6 +1040,8 @@
     Reduces target's HP to a single digit.
 
     Chance of successful attack is low. Has no effect on enemies whose level is higher than your own.
+  lore: |
+    Karlabos performs Tail Screw by collecting turbulent aether in the tip of its tail, then unleashing it at once as a violent whorl that rips foes' lives from their bodies. This is notoriously difficult to imitate, due to the challenges inherent in attempting to control such a volatile aetherial vortex.
   notes: |
     Has approximately 10% accuracy.
   target:
@@ -987,6 +1067,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Paralysis" >}}
 
     {{< green "Duration: " >}}30s
+  lore: |
+    Primarily used by soulflayers, though reportedly also found in Blaster's arsenal, Mind Blast assaults nearby foes' perceptions, tormenting them with the sensation of manifold cuts. Senses overwhelmed, victims' bodies react as if perception were reality, leaving them wounded and paralyzed.
   notes: |
     Guaranteed learn even when running unsynced.
   target:
@@ -1014,6 +1096,8 @@
     When effect expires, the target will be KO'd.
 
     Chance of successful attack is low. Has no effect on enemies whose level is higher than your own.
+  lore: |
+    Oft cast by voidsent in the New World, this mortal curse merely hints that one's time may be nigh. For particularly suggestible opponents, however, this is enough─the looming specter of death will send them leaping to their graves.
   notes: |
     Has approximately 33% accuracy.
   target:
@@ -1039,6 +1123,8 @@
     {{< green "Duration: " >}}15s
 
     Recast timer cannot be affected by other spells. However, this action shares a recast timer with {{< orange "Off-guard" >}}.
+  lore: |
+    A variant on a salamander specialty, Peculiar Light disperses radiance naturally emitted during spellcasting into a half-globe, clouding victims' vision. Thus unbeknownst to them, malignant aether lurking within the rapidly reflecting beams renders them more susceptible to further aetherial assaults.
   notes: |
     Stacks with Off-guard.
   target:
@@ -1067,6 +1153,8 @@
     {{< green "Duration: " >}}6s
 
     Shares a recast timer with {{< orange "Eruption" >}}.
+  lore: |
+    Feather Rain, as swift and brutal as most of Garuda's skills, puts the force of a gale behind a storm of sharp plumes, afflicting foes with innumerable cuts and lashes that cause lingering agony.
   target:
     - enemy
 - id: eruption
@@ -1087,6 +1175,8 @@
     Deals fire damage with a potency of 300 to all enemies at a designated location.
 
     Shares a recast timer with {{< orange "Feather Rain" >}}.
+  lore: |
+    Necessitating the skill to manipulate currents beneath the earth as Ifrit does, Eruption drives the fire within the land above ground in a burst of explosive flame, creating an effect similar to that of a volcano.
   notes: |
     Can trivially be learned solo synced on normal difficulty with 1000 Needles.
   target:
@@ -1108,6 +1198,8 @@
     Deals physical earth damage to all enemies in a cone before you with a potency of 400 for the first enemy, and 50% less for all remaining enemies.
 
     Shares a recast timer with {{< orange "Shock Strike" >}}.
+  lore: |
+    In a devastating recreation of one of Titan's most fearsome techniques, Mountain Buster strikes opponents with an upheaval of earth-aspected aether, as if the land itself were ripping free of its confines to pulverize its defilers─or any unfortunate bystanders, as it were.
   target:
     - enemy
 - id: shock_strike
@@ -1128,6 +1220,8 @@
     Deals lightning damage to target and all enemies nearby it with a potency of 400 for the first enemy, and 50% less for all remaining enemies.
 
     Shares a recast timer with {{< orange "Mountain Buster" >}}.
+  lore: |
+    Shock Strike, never so imposing as when cast by Ramuh, calls down a bolt from the heavens. Though measurements are difficult to come by, its power is thought to far exceed that of levinbolts found in nature─indeed, it more closely resembles a warhammer crashing to the earth.
   target:
     - enemy
 - id: glass_dance
@@ -1147,6 +1241,8 @@
     Deals ice damage to all enemies in a wide arc to your fore and flanks with a potency of 350 for the first enemy, and 50% less for all remaining enemies.
 
     Shares a recast timer with {{< orange "Veil of the Whorl" >}}.
+  lore: |
+    To fully replicate this technique, beloved of Shiva, the blue mage calls forth a bow of aether from which she fires a hail of razor-sharp icicles. Those who knew the lady Ysayle believe that Glass Dance may have taken form from her memories of observing hunters in Tailfeather.
   target:
     - enemy
 - id: veil_of_the_whorl
@@ -1171,6 +1267,8 @@
     Effect cannot be stacked with {{< yellow "Ice Spikes" >}} or {{< yellow "Schiltron" >}}.
 
     Shares a recast timer with {{< orange "Glass Dance" >}}.
+  lore: |
+    This fearsome magic, inspired by Leviathan, creates an aqueous film of water collected from the atmosphere. Though a veil in the sense of offering protection from outside forces, it also functions as a mirror, reflecting foes' aether back upon them.
   notes: |
     This is inferior to Glass Dance.
   target:
@@ -1193,6 +1291,8 @@
     Opinicus / The Dusk Vigil
   description: |
     Deals wind damage to all enemies in a straight line before you with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
+  lore: |
+    So fierce as to match the gales that pierce Abalathia's Spine, the gusting wind produced by this spell is commonly put to use by wild griffins in driving trespassers from their jealously guarded territory.
   target:
     - enemy
 - id: protean_wave
@@ -1214,6 +1314,8 @@
     Deals water damage to all enemies in a cone before you with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
 
     {{< green "Additional Effect: " >}}15-yalm knockback
+  lore: |
+    This technique originates with the living liquid, which coalesces about a hydrate core that allows it to dispense its own fluid in a violent flood. The magically reproduced version, correctly applied, is equally effective in sweeping away even the bulkiest of foes.
   notes: |
     Can be learned from the tornadoes during Act 2 of Red, Fraught, and Blue (Stage 29).
   target:
@@ -1240,6 +1342,8 @@
     {{< green "Additional Effect: " >}}Enemies affected by {{< yellow "Dropsy" >}} are frozen. The {{< yellow "Dropsy" >}} effect is also removed.
 
     {{< green "Duration: " >}}20s
+  lore: |
+    Owing to the unique refrigerant in its saliva, the yeti is able to chill its own breath to such great extent that said gust of air rapidly freezes ambient water-aspected aether. By magically generating a similar blizzard, the mage becomes particularly effective against foes afflicted with dropsy.
   target:
     - enemy
   status:
@@ -1263,6 +1367,8 @@
     Hikagiri / Shisui of the Violet Tides
   description: |
     Deals lightning damage to target and all enemies nearby it with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
+  lore: |
+    This efficacious technique is, in nature, employed by the voracious sea serpent, which will spit a bubble of water that takes on the electric charge of the serpent's own scales─giving the creature's prey a rather nasty shock upon impact.
   target:
     - enemy
 - id: kaltstrahl
@@ -1282,6 +1388,8 @@
     Jagd Doll / Alexander - The Cuff of the Father
   description: |
     Deals physical damage to all enemies in a cone before you with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
+  lore: |
+    To employ this technique, it is first necessary to replicate the panzer doll's fearsome spear, which is then swung in an arc to cut foes down quicker than they can blink.
   target:
     - enemy
 - id: abyssal_transfixion
@@ -1305,6 +1413,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Paralysis" >}}
 
     {{< green "Duration: " >}}30s
+  lore: |
+    An arch demon specialty, Abyssal Transfixion weaves aether into a globe of blades that are then plunged inward to pierce a target in unison. This harrowing experience generally has the effect of paralyzing said target with a visceral terror, making it an invaluable addition to one's arsenal.
   target:
     - enemy
   status:
@@ -1328,6 +1438,8 @@
     {{< green "Duration: " >}}40s
 
     Cancels auto-attack upon execution.
+  lore: |
+    This spell mimics the queer cry of the paissa, which is known to impart those who hear it with the answer to life, the universe, and everything─an experience to which the mind reacts by shutting down entirely, plunging its host into a deep slumber.
   notes: |
     Largely irrelevant due to the Sleep role action.
   target:
@@ -1353,6 +1465,8 @@
     Empuse / Azys Lla (30, 12)
   description: |
     Removes one beneficial effect from all nearby enemies.
+  lore: |
+    The empuse generates its Eerie Soundwave by rapidly vibrating parts of its body, emitting an unsettling tone that can only be described as “gods-awful.” Said tone can, however, be harnessed by the mage to disrupt certain harmonious aetherial frequencies and nullify their beneficial effects.
   target:
     - enemy
 - id: pom_cure
@@ -1374,6 +1488,8 @@
     {{< green "Cure Potency: " >}}100
 
     Cure potency is increased to 500 when you are under the effect of {{< yellow "Aetheric Mimicry: Healer" >}}.
+  lore: |
+    This spell seems fundamentally no different from those used by the conjurers of Stillglade Fane, though upon inquiry as to its detailed workings, an anonymous moogle provided the following words of advice: “Stuff your pom with magic─you know, the sparkly kind─then go 'bwaaa'!”
   target:
     - ally
 - id: gobskin
@@ -1397,6 +1513,8 @@
     Barrier strength is increased to absorb damage equivalent to a heal of 250 potency when you are under the effect of {{< yellow "Aetheric Mimicry: Healer" >}}.
 
     Effect cannot be stacked with those of scholar's {{< yellow "Galvanize" >}} or sage's {{< yellow "Eukrasian Diagnosis" >}} and {{< yellow "Eukrasian Prognosis" >}}.
+  lore: |
+    Only select goblins are privy to this technique, developed through unscrupulous scientific experimentation conducted by the Illuminati. It allows one to weave a thin, skintight veil of aether across their entire body, handily augmenting the usual defenses.
   target:
     - ally
 - id: magic_hammer
@@ -1425,6 +1543,8 @@
     {{< green "Additional Effect: " >}}Restores 10% of maximum MP
 
     Shares a recast timer with {{< orange "Candy Cane" >}}.
+  lore: |
+    Memorably employed by Byblos, this technique, simply put, drops a massive metal─or, in many cases, aetherial─hammer directly upon a foe's pate with resounding impact. Such foes understandably find their mental acuity somewhat reduced thereafter.
   target:
     - enemy
     - ally
@@ -1449,6 +1569,8 @@
     Can only be executed when member is within 10 yalms. Does not activate with certain attacks.
 
     This action does not share a recast timer with any other actions.
+  lore: |
+    In nature, the queen hawk secretes a particular pheromone when threatened that encourages her adoring swarm to put itself in harm's way in her name. The astute caster may create a similar effect by magical means─acquiring herself a “meat shield,” as it were.
   target:
     - ally
 - id: frog_legs
@@ -1466,6 +1588,8 @@
     Poroggo / The Dravanian Hinterlands (12, 35)
   description: |
     Provoke nearby enemies, placing yourself at the top of their enmity list.
+  lore: |
+    This incantation-like song is evidently considered a toe-tapper by poroggos─and poroggos exclusively, for to all other creatures it sounds much like a frog being run over by a carriage. Brazenly chanting it without remorse, therefore, is an effective means of drawing ire when necessary.
   notes: |
     This is not a proper provoke; it has a very small range and only sets your enmity to 1 more than the current highest enmity.
   target:
@@ -1487,6 +1611,8 @@
     Zu / Pharos Sirius
   description: |
     Deals wind damage with a potency of 210.
+  lore: |
+    A favored technique of the zu, who are able to perform it with a particularly vigorous flap of the wing, Sonic Boom produces a gust of wind-aspected aether so finely compressed that its lethality is oft likened unto that of a finely crafted blade.
   target:
     - enemy
 - id: whistle
@@ -1511,6 +1637,8 @@
     {{< green "Duration: " >}}30s
 
     Effect cannot be stacked with {{< yellow "Boost" >}}.
+  lore: |
+    This technique is in fact one of psychological suggestion, albeit suggestion performed on the self. When the proper pitch is attained, the body will respond by producing adrenaline, which can be used to advantage in combat─or, if one happens to be a dhalmel, in attracting a mate.
   notes: |
     Buffs *spells*, not *abilities*. Spells are *usually* tied to the GCD, while abilities are not (usually Primal spells).
   target:
@@ -1537,6 +1665,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Slow" >}} +20%
 
     {{< green "Duration:" >}} 20s
+  lore: |
+    Developed as an efficient means for subduing heretics, this spell unleashes a concentrated wave of aether that sears and warps the flesh, leaving its target pained and stumbling─particularly if said target has already succumbed to mental torments.
   target:
     - enemy
   status:
@@ -1563,6 +1693,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Bind" >}}
 
     {{< green "Duration:" >}} 20s
+  lore: |
+    Never particularly concerned with mercy, the Holy See intended this spell to crush heretics' spirits with a mentally destabilizing beam of aether. If the target is already suffering from physical distress, all the better.
   target:
     - enemy
   status:
@@ -1588,6 +1720,8 @@
     Enemy level must be a multiple of 5. Has no effect on enemies whose level is higher than your own.
 
     Shares a recast timer with {{< orange "Ultravibration" >}}.
+  lore: |
+    One of several voidsent curses that rely upon the hubris that living creatures fall prey to upon reaching certain growth malmstones, this spell twists its way into a victim's mind, causing such acute distress that the body's organs are forced to shut down.
   notes: |
     Has approximately 90% accuracy.
   target:
@@ -1613,6 +1747,8 @@
     Delivers an attack to all nearby enemies randomly dealing 50%, 30%, 20%, or 10% of their HP.
 
     Has no effect on enemies whose level is higher than your own.
+  lore: |
+    This spell─particularly effective on the gullible─conjures a volley of illusory missiles, fooling foes into feeling as if they have met the singularly unpleasant fate of being fired upon by Garlean magitek and causing their bodies to react accordingly.
   notes: |
     Has 100% accuracy, but MP cost makes it a bad choice.
   target:
@@ -1641,6 +1777,8 @@
     {{< green "Duration: " >}}1s
 
     Ignores target's {{< yellow "Stun" >}} resistance.
+  lore: |
+    Employed to great effect by a certain godlike machine, the concentrated heat that comprises Perpetual Ray has the capacity to deaden nerve endings and sever links between mind and muscle. By directing the beam with particular finesse, the savvy mage can render a foe entirely immobile.
   target:
     - enemy
   status:
@@ -1664,6 +1802,8 @@
     {{< green "Duration: " >}}6s
 
     Increases damage reduction to 15% when you are under the effect of {{< yellow "Aetheric Mimicry: Tank" >}}.
+  lore: |
+    Wild sabotenders are believed to have developed this ability to channel their aether toward others as a means of protecting particularly fruitful members of their species─as survival in arid climes ever comes at a cost.
   notes: |
     Largely irrelevant since it can only be cast on other players.
   target:
@@ -1685,6 +1825,8 @@
     Deals physical damage with a potency of 50.
 
     Potency is increased to 500 when your HP is below 20%.
+  lore: |
+    The Whalaqee are generally willing to pass on this close-quarter technique, which allows the mage to harness his own feelings of desperation at being driven closer to death and launch a last-ditch offensive. The name of the creature who originally possessed it, however, remains a closely guarded secret.
   target:
     - enemy
 - id: angel_whisper
@@ -1704,6 +1846,8 @@
     Resurrects target to a weakened state.
 
     This action does not share a recast timer with any other actions.
+  lore: |
+    The origin of this revitalizing spell is steeped in mystery, as it requires healing aether be amplified through a familiar that appears for all the world to be a messenger from the heavens─a concept soundly at odds with Whalaqee religious beliefs.
   target:
     - ally
 - id: exuviation
@@ -1729,6 +1873,8 @@
     {{< green "Additional Effect: " >}}Removes one detrimental effect from all nearby party members
 
     Cure potency is increased to 300 when you are under the effect of {{< yellow "Aetheric Mimicry: Healer" >}}.
+  lore: |
+    This spell enhances the body's natural detoxification processes, stimulating organs and the growth of new tissue. Perhaps due to it having originated with wamourae, it feels much like shedding an old layer of scales.
   target:
     - ally
 - id: reflux
@@ -1753,6 +1899,8 @@
     {{< green "Duration: " >}}10s
 
     Ignores target's {{< yellow "Heavy" >}} resistance.
+  lore: |
+    This technique strikes a foe with a ball of concentrated electricity─accumulated by wild elder wyverns during their passage through the clouds, but eminently reproducible through magical means─the power of which causes its body to seize as if being crushed by monumental weight.
   target:
     - enemy
   status:
@@ -1787,6 +1935,8 @@
     {{< green "Additional Effect: " >}}Restores an amount of own HP equal to damage dealt
 
     This action does not share a recast timer with any other actions.
+  lore: |
+    No longer merely the domain of savage beasts, this technique, when reproduced by the blue mage, involves not the devouring of rent flesh, but rather heals and invigorates its caster through the absorption of aether.
   target:
     - enemy
     - ally
@@ -1817,6 +1967,8 @@
     {{< green "Umbral Attenuation Effect: " >}}Increases damage taken from water-, earth-, and ice-aspected attacks by 5%
 
     Only one of these statuses can be applied to a target at a time.
+  lore: |
+    Invented by complete accident whilst a master mechanic attempted to manufacture an automaton that might monitor his lover's suspected illicit activities, and now a staple mechanism of mechanoscribes, Condensed Libra allows for the rapid analysis and amplification of a foe's weaknesses.
   notes: |
     Largely irrelevant with level 70 spells since we don't have the slots for three filler spells.
   target:
@@ -1844,6 +1996,8 @@
     If target is a healer, grants {{< yellow "Aetheric Mimicry: Healer" >}}, increasing healing magic potency by 20% and augmenting certain blue magic spells.
 
     Cannot be cast on self. Effect ends upon reuse.
+  lore: |
+    A useful little ability originating with the ghrah, Aetheric Mimicry allows the mage to match his aetherial wavelength to that of another person, granting the same benefits as their hard-won combat training.
   notes: |
     Can easily be learned solo. Unsynced is fine here, since we just keep killing adds on the first boss until it's learned.
   target:
@@ -1873,6 +2027,8 @@
     {{< green "Maximum Charges: " >}}4
 
     Effect is canceled upon execution of any action other than {{< orange "Surpanakha" >}}.
+  lore: |
+    Favored by Ravana, this spell subtly manipulates earth-aspected aether to draw metallic particles from nearby mineral deposits, then propels them forward in an expansive wave to pierce foes' flesh like shrapnel.
   target:
     - enemy
 - id: quasar
@@ -1892,6 +2048,8 @@
     Deals unaspected damage to all nearby enemies with a potency of 300 for the first enemy, and 50% less for all remaining enemies.
 
     Shares a recast timer with {{< orange "J Kick" >}}.
+  lore: |
+    Calling upon a rain of aetherial stars like that delivered unto those who upset Sophia's precious harmony, this spell leaves foes shaking from both the impact of a sky fallen and the thought of what fell fate it may portend.
   target:
     - enemy
 - id: j_kick
@@ -1914,6 +2072,8 @@
     Cannot be executed while bound.
 
     Shares a recast timer with {{< orange "Quasar" >}}.
+  lore: |
+    The signature move of Brute Justice, this technique involves unleashing the full force of justice, delirium unsuspected, static tuned in to reason─before falling back right in with the system, falling back to the end.
   target:
     - enemy
 - id: triple_trident
@@ -1935,6 +2095,8 @@
     Delivers a threefold attack, each hit with a potency of 150.
 
     This action does not share a recast timer with any other actions.
+  lore: |
+    Originally developed by the Namazu as a spearfishing technique, this blindingly fast triple strike has proven just as effective against creatures more intent on devouring the fisher.
   target:
     - enemy
 - id: tingle
@@ -1959,6 +2121,8 @@
     {{< green "Additional Effect: " >}}Increases the potency of the next physical damage spell cast by 100
 
     {{< green "Duration: " >}}15s
+  lore: |
+    The Namazu likely named this ability more for the pleasantly tingling current that energizes the caster, rather than the shocking bolt of devastation that smites the distant target. Devised by idle hunters who prefer to stay in one comfortable spot on the river, and strike at whatever swims into range.
   target:
     - enemy
     - ally
@@ -1982,6 +2146,8 @@
     {{< green "Additional Effect: " >}}{{< yellow "Stun" >}}
 
     {{< green "Duration: " >}}3s
+  lore: |
+    The dojun-maru employ this ability to weave a row of phantom tatami mats, which they then flip onto an enemy with stunning force. A true master of the technique can even imbue the creation with the faint scent of tatami straw.
   target:
     - enemy
   status:
@@ -2021,6 +2187,8 @@
     {{< green "Duration: " >}}10s
 
     Can only be executed while under the effect of {{< yellow "Touch of Frost" >}}.
+  lore: |
+    A mist dragon will instinctively cloak itself in a chilling fog, which allows it to freeze any aggressor foolish enough to test its defenses. Practitioners of this spell have discovered that the trick to not freezing oneself in the process is to surround the body with a pocket of warm air.
   notes: |
     In order to learn the spell you must *fail* the three heads mechanic during Mist Dragon.
   target:
@@ -2047,6 +2215,8 @@
     Action effect changes, restoring own HP and the HP of all nearby party members when you are under the effect of {{< yellow "Aetheric Mimicry: Healer" >}}.
 
     {{< green "Cure Potency: " >}}300
+  lore: |
+    A paean to love favored by Lakshmi, this spell produces an explosion of light, the effect of which varies depending on the caster's mindset─a heart intent on harm will scorch foes caught in the blast, whilst a heart filled with mercy will mend the wounds of those held dear.
   target:
     - enemy
     - ally
@@ -2068,6 +2238,8 @@
     Deals unaspected damage with a potency of 100 to target and all enemies nearby it.
 
     Potency increases to 500 when used against undead enemies.
+  lore: |
+    Cast by, of all things, a phantom train, this purifying light burns away restless spirits and consumes tainted souls. In Garlemald, where travel by machina is commonplace, the tale is told of a spectral locomotive whose passengers are the spirits of the dead...
   notes: |
     A decent list of vulnerable enemies can be found [here](https://finalfantasy.fandom.com/wiki/Final_Fantasy_XIV_enemies/Ashkin).
   target:
@@ -2090,6 +2262,8 @@
     The Mudman (A Rank) / Il Mheg
   description: |
     Deals earth damage to all enemies in a straight line before you with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
+  lore: |
+    The signature technique of Tokkapchi, this ability draws on earth-aspected aether to generate a stinging geyser of mud. Widely believed to deal additional psychological damage against opponents dressed in white.
   target:
     - enemy
 - id: angels_snack
@@ -2117,6 +2291,8 @@
     {{< green "Duration: " >}}15s
 
     Shares a recast timer with {{< orange "Dragon Force" >}} and {{< orange "Matra Magic" >}}.
+  lore: |
+    A spell attributed to the guardian statues of the New World wherein the caster manifests a spread of aetherial treats with panacean properties. Those nourished by the feast find their wounds quickly closing─an effect which lingers when provided by a practitioner with knowledge of healing.
 - id: chelonian_gate
   name: Chelonian Gate
   number: 89
@@ -2154,6 +2330,8 @@
     Potency increases to 1,000 when you are under the effect of {{< yellow "Aetheric Mimicry: Tank" >}}.
 
     Can only be executed when under the effect of {{< yellow "Auspicious Trance" >}}.
+  lore: |
+    A versatile technique utilized and perfected by Genbu, this magical barrier is formed of water-aspected aether. It works to soften incoming blows, storing energy that can later be unleashed in an explosive torrent.
   target:
     - enemy
     - ally
@@ -2176,6 +2354,8 @@
     {{< green "Additional Effect:" >}} 10-yalm knockback
 
     Shares a recast timer with {{< orange "Chelonian Gate" >}} and {{< orange "Ruby Dynamics" >}}.
+  lore: |
+    This spell imitates the martial technique devised by Ivon Coeurlfist, which in turn mimics the “blaster” attack employed by wild coeurls. Upon casting, a ball of concentrated aether is propelled forward with sufficient force to knock back all but the most implacable opponents.
   target:
     - enemy
 - id: basic_instinct
@@ -2196,6 +2376,8 @@
     Increases movement speed by 30%, and healing magic potency and damage dealt by 100%. Also ignores the damage penalty inflicted by {{< orange "Mighty Guard" >}}.
 
     Can only be used in duties intended for two or more players while playing alone, while no other party members are in the instance, or when all party members are incapacitated. Effect ends when joined by one or more party members.
+  lore: |
+    A behavior learned from certain species of coeurl, the caster rises to the challenge of losing comrades by tapping into a feral survival instinct. When all seems lost, or when simply treading where a lone mage was not meant to tread, unrestrained ferocity is sometimes the only way to win through.
   target:
     - ally
 - id: ultravibration
@@ -2215,6 +2397,8 @@
     KOs all nearby enemies afflicted with {{< yellow "Deep Freeze" >}} or {{< yellow "Petrification" >}}. Has no effect on enemies whose level is higher than your own, and certain others.
 
     Shares a recast timer with {{< orange "Level 5 Death" >}}.
+  lore: |
+    By manipulating aether to imitate the minute wingbeats of a kongamato, a caster generates an ultrasonic wave which ripples visibly through the surrounding air. The vibrations are lethal to frozen or petrified targets, causing them to shatter with dramatic force.
   target:
     - enemy
   status:
@@ -2236,6 +2420,8 @@
     Alte Roite / Deltascape V1.0
   description: |
     Deals ice damage to target and all enemies nearby it with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
+  lore: |
+    Contrary to expectation, the Blaze attack employed by Alte Roite manifests a swirling storm of ice. Some dismiss the spell's name as an odd jest made by the author of the novel in which the winged serpent was first referenced, while others claim the freezing lesions it causes resemble terrible burns.
   target:
     - enemy
 - id: mustard_bomb
@@ -2261,6 +2447,8 @@
     {{< green "Potency: " >}}50
 
     {{< green "Duration: " >}}15s
+  lore: |
+    A recreation of the terrible chemical explosive employed by Omega, this spell fires a bomb on an arcing trajectory which detonates on impact with the target. The attack is known to leave behind a pungent odor, not unlike mustard.
   target:
     - enemy
 - id: dragon_force
@@ -2283,6 +2471,8 @@
     Increases damage reduction to 40% when you are under the effect of {{< yellow "Aetheric Mimicry: Tank" >}}.
 
     Shares a recast timer with {{< orange "Angel's Snack" >}} and {{< orange "Matra Magic" >}}.
+  lore: |
+    A technique said to originate from the dragons of the New World, this ability cocoons the caster in a sphere of aetherial force which serves to blunt incoming attacks. There is some debate on whether the aforementioned “dragons” are truly of dragonkind, or merely a species of “dragon-like” scalekin.
   target:
     - ally
 - id: aetherial_spark
@@ -2309,6 +2499,8 @@
     {{< green "Potency:" >}} 50
 
     {{< green "Duration:" >}} 15s
+  lore: |
+    This spell, learned from the dhruva, summons forth a cluster of luminous projectiles which inflict multiple pinpoint wounds to all in their path. The jagged edges of these tiny lacerations bleed profusely, weakening the target and causing considerable pain.
   target:
     - enemy
 - id: hydro_pull
@@ -2328,6 +2520,8 @@
     Deals water damage to all nearby enemies with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
 
     {{< green "Additional Effect: " >}}Draw-in</span>
+  lore: |
+    Commonly used amongst Kelpies, this spell generates a powerful current of water which draws in surrounding targets, with even low-flying cloudkin falling victim to its inexorable pull.
   target:
     - enemy
 - id: malediction_of_water
@@ -2349,6 +2543,8 @@
     {{< green "Additional Effect: " >}}10-yalm knockback to all enemies and party members in range
 
     Cannot be used outside of combat or when target is suffering from certain enfeeblements.
+  lore: |
+    This example of sai taisui geomancy sends forth a surging wall of water which sweeps along all in its path─friend or foe. One cannot be too careful when toying with maledictions.
   target:
     - enemy
     - ally
@@ -2370,6 +2566,8 @@
     Deals unaspected damage to target and all enemies nearby it with a potency of 200 for the first enemy, and 50% less for all remaining enemies.
 
     Potency increases to 300 when partied with your personal chocobo.
+  lore: |
+    A destructive ability employed by red chocobos wherein the dust and dirt in the area is drawn up into one solid mass, heated until it glows, then dropped on a target from on high. It is unsurprising, then, that these feathery fiends─also known as courser chocobos─are greeted with near-universal terror.
   notes: |
     This is our best spell in the overworld (outside of duties), but only does 200 potency inside duties.
   target:
@@ -2393,6 +2591,8 @@
     Potency is increased to 100 when you are under the effect of {{< yellow "Aetheric Mimicry: DPS" >}}.
 
     Shares a recast timer with {{< orange "Angel's Snack" >}} and {{< orange "Dragon Force" >}}.
+  lore: |
+    A variety of magic employed by New World voidsent, this spell pummels the target with a barrage of incandescent orbs. Its name, likely familiar to scholars of the arcane, is said to have once encompassed the Whalaqee arts of near-death curses and converting life force into mana.
   target:
     - enemy
 - id: peripheral_synthesis
@@ -2419,6 +2619,8 @@
     {{< green "Duration: " >}}5s
 
     Repeated use of this action in a short period will reduce the additional effect's duration, eventually rendering targets immune to {{< yellow "Lightheaded" >}}.
+  lore: |
+    Omega's power reigned supreme within the interdimensional rift, allowing it to access a store of collected data and synthesize all manner of entities and objects─including giant, rocket-propelled fists of unyielding metal.
   target:
     - enemy
   status:
@@ -2440,6 +2642,8 @@
     Deals physical damage with a potency of 600 to all nearby enemies.
 
     Shares a recast timer with {{< orange "Nightbloom" >}}.
+  lore: |
+    This incantation seeks to emulate the supernatural might of the auspice Qitian Dasheng, with the caster leaping into the air, and spinning an elongated staff of pure aether in a whirlwind of brutal force.
   target:
     - enemy
 - id: phantom_flurry
@@ -2463,6 +2667,8 @@
     Executing {{< orange "Phantom Flurry" >}} again before its effect expires deals physical damage to all enemies in a cone before you with a potency of 600 for the first enemy, and 50% less for all remaining enemies.
 
     Effect ends upon using an action other than {{< orange "Phantom Flurry" >}} or moving (including facing a different direction).
+  lore: |
+    A technique employed by Suzaku, wherein the auspice unleashes a swift series of blurring kicks. The “phantom” half of the name is a somewhat nebulous reference to a constellation in Far Eastern astrology, the sign of which is said to bring good fortune in all matters...except that of matrimony.
   target:
     - enemy
 - id: nightbloom
@@ -2488,6 +2694,8 @@
     {{< green "Duration: " >}}60s
 
     Shares a recast timer with {{< orange "Both Ends" >}}.
+  lore: |
+    This extravagant technique belongs to Tsukuyomi, Lady of the Moon, whose malignant ire manifests as a field of flowers which then burst apart in a hail of deadly petals. Accept the inevitability of the grave, and the power of the nightbloom is yours to wield...
   target:
     - enemy
 - id: goblin_punch
@@ -2511,6 +2719,8 @@
     Potency is increased to 220 when you are under the effect of {{< yellow "Mighty Guard" >}}.
 
     320 when executed in front of a target while you are under the effect of {{< yellow "Mighty Guard" >}}.
+  lore: |
+    Favored by hobgoblins, this time-honored technique operates on the premise of “beating 'em senseless.” Blue mages strengthen the attack by channeling magic into their fists, which come to harbor even greater pummeling potential when coupled with the stones to face one's foe head-on.
   target:
     - enemy
 - id: right_round
@@ -2532,6 +2742,8 @@
     {{< green "Additional Effect:" >}} 10-yalm knockback to all enemies and party members in range
 
     Cannot be used outside of combat or when target is suffering from certain enfeeblements.
+  lore: |
+    This spell recreates the devastating way in which the greater armadillo swings an enormous boulder in its clawed tail as if wielding a flail. A boulder is conjured from aether and similarly swung at great speed, sending nearby foes flying.
   target:
     - enemy
     - ally
@@ -2557,6 +2769,8 @@
     Potency is increased to 100 when you are under the effect of {{< yellow "Aetheric Mimicry: Tank" >}}.
 
     Effect cannot be stacked with {{< yellow "Veil of the Whorl" >}} or {{< yellow "Ice Spikes" >}}.
+  lore: |
+    Certain species of armadillo have learned to channel aether into their shells, thus granting them the hardness of metal. A similar stratagem allows the blue mage to reflect physical blows back upon an attacker─though unfortunately, both armadillo and man still feel the intial, teeth-rattling impact.
   target:
     - ally
 - id: rehydration
@@ -2575,6 +2789,8 @@
     Restores own HP.
 
     {{< green "Cure Potency:" >}} 600
+  lore: |
+    Particularly savvy armadillos are capable of healing themselves by drawing upon the moisture in the air, and by imitating this behavior, mages can enjoy the selfsame benefits─including flawless skin.
   target:
     - ally
 - id: breath_of_magic
@@ -2597,6 +2813,8 @@
     {{< green "Duration: " >}}60s
 
     Only one effect inflicted by this action can be active at a time.
+  lore: |
+    Acquired from a species of crustacean native to the New World, this spell is executed by blending aether of multiple aspects and unleashing it in one fell blast. This has the effect of disrupting the target's aetheric balance, thereby gradually robbing them of vigor.
   target:
     - enemy
 - id: wild_rage
@@ -2616,6 +2834,8 @@
     Deals physical damage to all nearby enemies with a potency of 500 for the first enemy, and 50% less for all remaining enemies.
 
     Consumes 50% of your maximum HP when executed.
+  lore: |
+    Embracing rage in the fashion of the spectral berserker allows one to unleash an unbridled wave of destruction. As many a parable will attest, however, anger is a double-edged sword; the spell consumes a great deal of energy, and the caster is advised to be wary of untimely exhaustion.
   notes: |
     Two casts of this from full health will put you into Revenge Blast range
   target:
@@ -2644,6 +2864,8 @@
     {{< green "Potency:" >}} 10
 
     {{< green "Duration:" >}} 9s
+  lore: |
+    Taking a filthy page from the mudman, this spell coalesces earth-aspected aether into a clump of mud, which is hurled at enemies. Those who are struck bear stubborn mud stains that diminish their self-worth, causing a lingering enervation.
   target:
     - enemy
 - id: deep_clean
@@ -2676,6 +2898,8 @@
     {{< green "Duration:" >}} 15s
 
     Additional stacks of {{< yellow "Spick-and-span" >}} accumulated while the effect is active will not affect duration.
+  lore: |
+    Taking a spotless page from the Seeker of Solitude, this spell summons forth a magicked broom to sweep the area clean. Each mud stain it removes serves to affirm its self-worth, and it imparts that sense of well-being to the caster.
   target:
     - enemy
     - ally
@@ -2696,6 +2920,8 @@
     Deals physical damage with a potency of 220 to all enemies before you.
 
     Shares a recast timer with {{< orange "Chelonian Gate" >}} and {{< orange "The Rose of Destruction" >}}.
+  lore: |
+    In order to extend its claws for a near-inescapable strike, the Ruby Weapon transforms energy generated by its advanced dynamo unit. Albeit on a smaller scale, the mage recreates this technique by channeling aether into numerous razor-sharp aetherial blades.
   target:
     - enemy
 - id: divination_rune
@@ -2715,6 +2941,8 @@
     Deals unaspected damage with a potency of 100 to all enemies in a cone before you.
 
     {{< green "Additional Effect:" >}} Restores MP
+  lore: |
+    The language of the fae folk is composed of runes, symbols that harbor magic, and the faerie king Titania was partial to this one. When invoked, it emits an aetheric wave that resonates with the target's magical energies, making them surpassingly easy to extract.
   target:
     - enemy
     - ally
@@ -2735,6 +2963,8 @@
     Delivers an attack to all nearby enemies dealing damage equal to 30% of their current HP.
 
     Has no effect on enemies whose level is higher than your own.
+  lore: |
+    Employed by Eden Prime, this technique shifts the fabric of reality to trigger a powerful aetheric surge. While it inflicts considerable damage, it demands an extended casting period so as to allow mages to raise a protective barrier over themselves.
   target:
     - enemy
   status:
@@ -2757,6 +2987,8 @@
     Deals unaspected damage to all enemies in a straight line before you with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
 
     Potency is increased to 440 when you are under the effect of {{< yellow "Winged Redemption" >}}.
+  lore: |
+    Learned from the forgiven obscenity, this technique unleashes a beam of Light-aligned aether at opponents. Lest the responsible mage worry, being a scaled-down recreation, the spell does not possess the potency to transform living beings into sin eaters.
   target:
     - enemy
 - id: force_field
@@ -2781,6 +3013,8 @@
     {{< green "Magic Vulnerability Down Effect:" >}} Reduces magic damage taken by 50%
 
     This action does not share a recast timer with any other actions.
+  lore: |
+    Originally employed by Sephirot, the Fiend, to render foes vulnerable to attacks, this spell has been adapted for the mage's own protection. Due to the field's intrinsic instability, however, it cannot simultaneously grant both physical and magical benefits, only one or the other.
   target:
     - ally
 - id: winged_reprobation
@@ -2813,6 +3047,8 @@
     {{< green "Duration:" >}} 10s
 
     This action does not share a recast timer with any other actions.
+  lore: |
+    This imitation of the Lightwarden Innocence's technique conjures up swords of Light that rain down from the heavens. Rumor has it Lord Vauthry used the technique to turn sin eaters into meol, which may explain why it appears to bring the caster closer to his perfection.
   target:
     - enemy
 - id: laser_eye
@@ -2834,6 +3070,8 @@
     Deals unaspected damage to target and all enemies nearby it with a potency of 220 for the first enemy, and 50% less for all remaining enemies.
 
     {{< green "Additional Effect:" >}} 5-yalm knockback to all enemies within 8 yalms of target
+  lore: |
+    Inspired by Eden's Promise, this spell uses the eyes as arcane circles through which aether is channeled─a principle also seen in techniques such as Glower. So concentrated in energy is the beam, it explodes upon contact. Chirurgeon's warning: excessive use may lead to chronic dry eyes.
   target:
     - enemy
 - id: candy_cane
@@ -2860,6 +3098,8 @@
     {{< green "Additional Effect:" >}} Restores 10% of maximum MP
 
     Shares a recast timer with {{< orange "Magic Hammer" >}}.
+  lore: |
+    Loosely based upon Aenc Thon's technique, which saw him wallop foes with a candy cane, this spell sweetens any duel with a rain of confections. The Fuath leader, for one, would not be averse to mages thus spreading the love.
   target:
     - enemy
     - ally
@@ -2884,6 +3124,8 @@
     Has no effect on targets outside of combat.
 
     Effect ends upon target leaving combat.
+  lore: |
+    In battle, the familiar Lugus used this technique to create a veritable conflagration. That power is now yours to wield...albeit at a greatly diminished strength. Not wishing to be responsible for burning entire cities down, the Blue Mages' Guild opted to limit the flame's intensity to a gentle sear.
   target:
     - enemy
 - id: sea_shanty
@@ -2903,6 +3145,8 @@
     Deals water damage with a potency of 500 to all nearby enemies.
 
     {{< green "Additional Effect:" >}} Potency increases to 1,000 during rain, showers, and thunderstorms
+  lore: |
+    Part of the nixie's watery repertoire, this technique sends a swirling deluge crashing over enemies─rather too rough for its original purpose of delighting children, but it makes a fine addition to the blue mage's arsenal.
   target:
     - enemy
 - id: apokalypsis
@@ -2928,6 +3172,8 @@
     Effect ends upon using another action or moving (including facing a different direction).
 
     Shares a recast timer with {{< orange "Being Mortal" >}}.
+  lore: |
+    While magic is ordinarily woven with words and symbols, this spell employed by the dread creation Therion harnesses the power of emotion to beget destruction. It is said that, if one can cling to the desire for oblivion, it is possible to sustain the ruinous effect indefinitely.
   target:
     - enemy
 - id: being_mortal
@@ -2947,5 +3193,7 @@
     Deals unaspected damage to all nearby enemies with a potency of 800 for the first enemy, and 50% less for all remaining enemies.
 
     Shares a recast timer with {{< orange "Apokalypsis" >}}.
+  lore: |
+    The faerie king Titania's signature move, this spell embodies the disdain, pity, and delight that men's fleeting lives inspire in the fae folk. By weaving layers upon layers of runes to create a deadly maelstrom of magic, you too can remind others of their mortality...until you inevitably meet your own demise.
   target:
     - enemy

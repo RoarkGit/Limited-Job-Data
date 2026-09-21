@@ -28,6 +28,7 @@ Structured data for every Blue Mage spell, including:
 | `face` | `true` if the spell requires facing targets (optional) |
 | `location` | Where the spell can be learned |
 | `description` | In-game tooltip description |
+| `lore` | Lore entry from the in-game Blue Magic Spellbook |
 | `target` | Array of valid targets (`enemy`, `self`, `ally`, etc.) |
 
 ### `spell/images/`
@@ -46,6 +47,7 @@ Structured data for every Beastmaster beast in the Master's Bestiary:
 | `classification` | Beastkin, Vilekin, Cloudkin, Seedkin, Wavekin, Scalekin, Soulkin, or Ashkin |
 | `satiety` | How many feedings the beast can take |
 | `habitat` | Where the beast can be captured |
+| `lore` | Lore entry from the in-game Master's Bestiary |
 | `autoAttack` | Element and range of the beast's auto-attack |
 | `trick` | The beast's Trick action (Lv. 8) |
 | `temperedRelease` | The beast's Tempered Release action (Lv. 18) |
