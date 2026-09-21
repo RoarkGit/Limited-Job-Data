@@ -51,7 +51,8 @@ Structured data for every Beastmaster beast in the Master's Bestiary:
 | `autoAttack` | Element and range of the beast's auto-attack |
 | `trick` | The beast's Trick action (Lv. 8) |
 | `temperedRelease` | The beast's Tempered Release action (Lv. 18) |
-| `stats` | Strength, Intelligence, Phys. Resistance, Mag. Resistance, and Constitution ratings |
+| `stats` | Strength, Intelligence, Phys. Resistance, Mag. Resistance, and Constitution at rank 25 (max rank); equal to `growth[24]` |
+| `growth` | The same five stats at every rank 1-25, indexed 0-24. Each row is `[strength, intelligence, physicalResistance, magicalResistance, constitution]` |
 
 Extracted from the game's own Excel sheets: `XBMPet` joined to `Pet`, `Action`, `ActionTransient`, `PlaceName` and `ContentFinderCondition`, read via [xivapi/ffxiv-datamining](https://github.com/xivapi/ffxiv-datamining), with icons from [xivapi](https://v2.xivapi.com/). Field names and the eight classifications come from the Master's Bestiary UI strings, `Addon` rows 17712 to 17748.
 
